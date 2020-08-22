@@ -1,0 +1,23 @@
+{
+	"name": "soundGuessy",
+	"version": "1.0.0",
+	"description": "I notice where is not a way to listen to soundtracks and guessing the Movie, TV-Show, Music, Video Game or Land (Hymne). There is a option but it is really not ux friendly it by hearing the sound on youtube and guessing the soundtrack.",
+	"main": "index.js",
+	"scripts": {
+		"build:css": "tailwind build src/style.css -o dist/styles/style.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/TolgaKara/soundGuessy.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/TolgaKara/soundGuessy/issues"
+	},
+	"homepage": "https://github.com/TolgaKara/soundGuessy#readme",
+	"dependencies": {
+		"tailwindcss": "^1.7.3"
+	}
+}
