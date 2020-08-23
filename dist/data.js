@@ -8,6 +8,7 @@ const tvShows = [
 		rate: "9,3",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_UY209_CR7,0,140,209_AL_.jpg",
+		soundtrack: "s7L2PVdrb_8?start=0;end=15",
 	},
 	{
 		title: "Stranger Things",
@@ -18,6 +19,7 @@ const tvShows = [
 		rate: "8,8",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "RcPZdihrp4?start=0;end=15",
 	},
 	{
 		title: "The Walking Dead",
@@ -28,16 +30,7 @@ const tvShows = [
 		rate: "8,2",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BYTUwOTM3ZGUtMDZiNy00M2I3LWI1ZWEtYzhhNGMyZjI3MjBmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX140_CR0,0,140,209_AL_.jpg",
-	},
-	{
-		title: "Tote Mädchen lügen nicht",
-		publishDate: "(2017–2020)",
-		genre: "Drama, Mystery",
-		descr:
-			"Follows teenager Clay Jensen, in his quest to uncover the story behind his classmate and crush, Hannah, and her decision to end her life.",
-		rate: "7,7",
-		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "of-Bqmlgj98?start=0;end=15",
 	},
 	{
 		title: "The 100",
@@ -48,6 +41,7 @@ const tvShows = [
 		rate: "7,7",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BNjRiYTIzZmUtMTFkNS00ZTM0LWE4ODAtMDliMGE4NzM5ZjVlXkEyXkFqcGdeQXVyNDQ0MTYzMDA@._V1_UY209_CR14,0,140,209_AL_.jpg",
+		soundtrack: "8ZzVZs3C3kU?start=10;end=25",
 	},
 	{
 		title: "Orange Is the New Black",
@@ -58,6 +52,7 @@ const tvShows = [
 		rate: "8,1",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BYjYyM2FmMmMtZDgyZi00NGU3LWI3NzktODllZDY0YzQyNzgyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "fBITGyJynfA?start=0;end=15",
 	},
 	{
 		title: "Riverdale",
@@ -68,6 +63,7 @@ const tvShows = [
 		rate: "7",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BNDYxOTU0NDYtYzg2MC00YzgyLTg1YzctMDc1MGJmOGIzMTc3XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_UX140_CR0,0,140,209_AL_.jpg",
+		soundtrack: "9EtGyFomD10?start=0;end=15",
 	},
 	{
 		title: "Grey's Anatomy: Die jungen Ärzte",
@@ -78,6 +74,7 @@ const tvShows = [
 		rate: "7,6",
 		img:
 			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "ndNAOTYkuEU?start=0;end=15",
 	},
 	{
 		title: "The Flash",
@@ -88,6 +85,7 @@ const tvShows = [
 		rate: "7,7",
 		img:
 			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "8D4ThTcvTDo?start=0;end=15",
 	},
 	{
 		title: "Arrow",
@@ -98,6 +96,7 @@ const tvShows = [
 		rate: "7,5",
 		img:
 			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "0ZO_W2YemD8?start=0;end=15",
 	},
 	{
 		title: "Haus des Geldes",
@@ -108,6 +107,7 @@ const tvShows = [
 		rate: "8,4",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BZDcxOGI0MDYtNTc5NS00NDUzLWFkOTItNDIxZjI0OTllNTljXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "h9ZBKtGnd5M?start=0;end=15",
 	},
 	{
 		title: "The Big Bang Theory",
@@ -118,6 +118,7 @@ const tvShows = [
 		rate: "8,1",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BY2FmZTY5YTktOWRlYy00NmIyLWE0ZmQtZDg2YjlmMzczZDZiXkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_UX140_CR0,0,140,209_AL_.jpg",
+		soundtrack: "kCHGDRHZ4eU?start=0;end=15",
 	},
 	{
 		title: "Black Mirror",
@@ -128,6 +129,7 @@ const tvShows = [
 		rate: "8,8",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BYTM3YWVhMDMtNjczMy00NGEyLWJhZDctYjNhMTRkNDE0ZTI1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "i8tBU5BqHtw?start=0;end=15",
 	},
 	{
 		title: "Sherlock",
@@ -138,6 +140,7 @@ const tvShows = [
 		rate: "9,1",
 		img:
 			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "IB8nPu5iH9c?start=0;end=15",
 	},
 	{
 		title: "Vikings",
@@ -148,6 +151,7 @@ const tvShows = [
 		rate: "8,5",
 		img:
 			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "gmyCRJkKeKs?start=0;end=15",
 	},
 	{
 		title: "Pretty Little Liars",
@@ -158,6 +162,7 @@ const tvShows = [
 		rate: "7,4",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMTU5MDYzMzQ2Nl5BMl5BanBnXkFtZTgwMDE3MzU4MTI@._V1_UY209_CR1,0,140,209_AL_.jpg",
+		soundtrack: "xop-GWk2mmg?start=0;end=15",
 	},
 	{
 		title: "The Vampire Diaries",
@@ -168,6 +173,7 @@ const tvShows = [
 		rate: "7,7",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMDk3YzgxNDQtNTEzOS00NDMyLWFlYmYtYTZlMDk1NDkxNmMyXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_UY209_CR1,0,140,209_AL_.jpg",
+		soundtrack: "8X58iS1ovus?start=0;end=15",
 	},
 	{
 		title: "American Horror Story",
@@ -178,6 +184,7 @@ const tvShows = [
 		rate: "8",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BODZlYzc2ODYtYmQyZS00ZTM4LTk4ZDQtMTMyZDdhMDgzZTU0XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_UX140_CR0,0,140,209_AL_.jpg",
+		soundtrack: "uszyuXefJyA?start=0;end=15",
 	},
 	{
 		title: "Breaking Bad",
@@ -188,6 +195,7 @@ const tvShows = [
 		rate: "9,5",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY209_CR5,0,140,209_AL_.jpg",
+		soundtrack: "F1HNuAE9WdU?start=0;end=15",
 	},
 	{
 		title: "Lucifer",
@@ -198,6 +206,7 @@ const tvShows = [
 		rate: "8,2",
 		img:
 			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "IsWr4_JbC3s?start=1;end=6",
 	},
 	{
 		title: "Supernatural: Zur Hölle mit dem Bösen",
@@ -208,6 +217,7 @@ const tvShows = [
 		rate: "8,4",
 		img:
 			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "uT8dn09ZbSg?start=3;end=9",
 	},
 	{
 		title: "Prison Break",
@@ -218,6 +228,7 @@ const tvShows = [
 		rate: "8,3",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMTg3NTkwNzAxOF5BMl5BanBnXkFtZTcwMjM1NjI5MQ@@._V1_UY209_CR1,0,140,209_AL_.jpg",
+		soundtrack: "LVFk2u6b5ZY?start=0;end=15",
 	},
 	{
 		title: "How to Get Away with Murder",
@@ -228,6 +239,7 @@ const tvShows = [
 		rate: "8,1",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BZDQ5ZDRhMWItNjA5Ni00MDhiLTgwN2EtZjFkYzgzNjBhZTIyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "TmzNB3a2u5o?start=0;end=15",
 	},
 	{
 		title: "Teen Wolf",
@@ -238,6 +250,7 @@ const tvShows = [
 		rate: "7,6",
 		img:
 			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "wqDCNvvlKMs?start=2;end=17",
 	},
 	{
 		title: "Die Simpsons",
@@ -247,6 +260,7 @@ const tvShows = [
 		rate: "8,7",
 		img:
 			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "SR8WWFzrZAg?start:5;end=20",
 	},
 	{
 		title: "Once Upon a Time - Es war einmal ...",
@@ -257,6 +271,7 @@ const tvShows = [
 		rate: "7,7",
 		img:
 			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "dCMJc7SyIyw?start=0;end=15",
 	},
 	{
 		title: "Narcos",
@@ -267,6 +282,7 @@ const tvShows = [
 		rate: "8,8",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BNmFjODU3YzgtMGUwNC00ZGI3LWFkZjQtMjkxZDc3NmQ1MzcyXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "PtJ6yAGjsIs?start=0;end=15",
 	},
 	{
 		title: "Marvel's Daredevil",
@@ -277,6 +293,7 @@ const tvShows = [
 		rate: "8,6",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BODcwOTg2MDE3NF5BMl5BanBnXkFtZTgwNTUyNTY1NjM@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "KFYFh8w4758?start=0;end=15",
 	},
 	{
 		title: "Friends",
@@ -287,6 +304,7 @@ const tvShows = [
 		rate: "8,9",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY209_CR1,0,140,209_AL_.jpg",
+		soundtrack: "sLisEEwYZvw?start=0;end=15",
 	},
 	{
 		title: "How I Met Your Mother",
@@ -297,6 +315,7 @@ const tvShows = [
 		rate: "8,3",
 		img:
 			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "WgtHWXYDrbE?start=0;end=15?start=0;end=15",
 	},
 	{
 		title: "Suits",
@@ -307,6 +326,7 @@ const tvShows = [
 		rate: "8,5",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BNmVmMmM5ZmItZDg0OC00NTFiLWIxNzctZjNmYTY5OTU3ZWU3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY209_CR1,0,140,209_AL_.jpg",
+		soundtrack: "dENuJeajuPU?start=0;end=15",
 	},
 	{
 		title: "Mr. Robot",
@@ -317,6 +337,7 @@ const tvShows = [
 		rate: "8,5",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMzgxMmQxZjQtNDdmMC00MjRlLTk1MDEtZDcwNTdmOTg0YzA2XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_UX140_CR0,0,140,209_AL_.jpg",
+		soundtrack: "XMEXPkPmmq0?start=0;end=15",
 	},
 	{
 		title: "The Originals",
@@ -327,6 +348,7 @@ const tvShows = [
 		rate: "8,2",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BNDllZjc2NjEtOGMwZS00ZmNkLTg2NDgtZjJkYjg0YjMxM2FmXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_UX140_CR0,0,140,209_AL_.jpg",
+		soundtrack: "YgJVUhIFrXg?start=0;end=15",
 	},
 	{
 		title: "Supergirl",
@@ -336,6 +358,7 @@ const tvShows = [
 		rate: "6,3",
 		img:
 			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "5f6XORh5wNc?start=0;end=15",
 	},
 	{
 		title: "Gossip Girl",
@@ -346,6 +369,7 @@ const tvShows = [
 		rate: "7,4",
 		img:
 			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "gk6QuPkPy9Q?start=0;end=15",
 	},
 	{
 		title: "Sense8",
@@ -354,8 +378,8 @@ const tvShows = [
 		descr:
 			"A group of people around the world are suddenly linked mentally, and must find a way to survive being hunted by those who see them as a threat to the world's order.",
 		rate: "8,3",
-		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		img: "https://filmdaily.co/wp-content/uploads/2020/06/sense8-lede.jpg",
+		soundtrack: "f9ZqGFiKwA8?start=0;end=15",
 	},
 	{
 		title: "Gotham",
@@ -365,7 +389,8 @@ const tvShows = [
 			"The story behind Detective James Gordon's rise to prominence in Gotham City in the years before Batman's arrival.",
 		rate: "7,8",
 		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.https://pictures.betaseries.com/fonds/poster/5f134d1e99c6def6fc3e0deb9c9bd948.jpg",
+		soundtrack: "Qb5nHTCLJrU?start=0;end=15",
 	},
 	{
 		title: "Westworld",
@@ -376,6 +401,7 @@ const tvShows = [
 		rate: "8,7",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMTRmYzNmOTctZjMwOS00ODZlLWJiZGQtNDg5NDY5NjE3MTczXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "QRi3ULhyQq0?start=0;end=15",
 	},
 	{
 		title: "Marvel's Jessica Jones",
@@ -386,6 +412,7 @@ const tvShows = [
 		rate: "7,9",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BM2QyNmZkNTYtZWQyZi00NDhhLWEzMDItYmIzY2U4ZWVmOWNhXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "kmUQAZ7K3co?start=0;end=15",
 	},
 	{
 		title: "Modern Family",
@@ -396,6 +423,7 @@ const tvShows = [
 		rate: "8,4",
 		img:
 			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "q3xrdZpMdu0?start=0;end=13",
 	},
 	{
 		title: "Rick and Morty",
@@ -405,7 +433,8 @@ const tvShows = [
 			"An animated series that follows the exploits of a super scientist and his not-so-bright grandson.",
 		rate: "9,2",
 		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+			"https://m.media-amazon.com/images/M/MV5BZjRjOTFkOTktZWUzMi00YzMyLThkMmYtMjEwNmQyNzliYTNmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_UX182_CR0,0,182,268_AL_.jpg",
+		soundtrack: "xCdfDvcDfn4?start=0;end=15",
 	},
 	{
 		title: "Shadowhunters: The Mortal Instruments",
@@ -416,16 +445,7 @@ const tvShows = [
 		rate: "6,6",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BNTU1N2ViZDctYzQwOS00ZDYyLThkMDItNmEwYTIyZTI4NGFhXkEyXkFqcGdeQXVyNTM1NDMwNDM@._V1_UY209_CR1,0,140,209_AL_.jpg",
-	},
-	{
-		title: "The End of the F***ing World",
-		publishDate: "(2017–2019)",
-		genre: "Adventure, Comedy, Crime",
-		descr:
-			"James is 17 and is pretty sure he is a psychopath. Alyssa, also 17, is the cool and moody new girl at school. The pair make a connection and she persuades him to embark on a road trip in search of her real father.",
-		rate: "8,1",
-		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		soundtrack: "WwT0yZmxocs?start=0;end=15",
 	},
 	{
 		title: "House of Cards",
@@ -436,6 +456,7 @@ const tvShows = [
 		rate: "8,7",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BODM1MDU2NjY5NF5BMl5BanBnXkFtZTgwMDkxNTcwNjM@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "9w-O60x1bYk?start=0;end=15",
 	},
 	{
 		title: "Dark",
@@ -446,6 +467,7 @@ const tvShows = [
 		rate: "8,8",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BZmY2YzU4NDktODIxYi00YWIyLWIzYTctODBkYzYzZjc0ODdlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "8c399HPb01s?start=0;end=15",
 	},
 	{
 		title: "Élite",
@@ -455,17 +477,8 @@ const tvShows = [
 			"When three working-class teenagers begin attending an exclusive private school in Spain, the clash between them and the wealthy students leads to murder.",
 		rate: "7,6",
 		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
-	},
-	{
-		title: "Sex Education",
-		publishDate: "(2019– )",
-		genre: "Comedy, Drama",
-		descr:
-			"A teenage boy with a sex therapist mother teams up with a high school classmate to set up an underground sex therapy clinic at school.",
-		rate: "8,3",
-		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+			"https://mcetv.fr/wp-content/uploads/2019/09/Elite-saison-2-retour-sur-la-saison-1-avant-les-nouveaux-e%CC%81pisodes720.jpeg",
+		soundtrack: "ncB6XOZevLc?start=0;end=15",
 	},
 	{
 		title: "Shameless - Nicht ganz nüchtern",
@@ -475,6 +488,7 @@ const tvShows = [
 		rate: "8,6",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BYzFmODNkNDMtOTgzMy00NzQ1LWEwNDItNzU1MmYyYThhYzUwXkEyXkFqcGdeQXVyOTA3MTMyOTk@._V1_UY209_CR8,0,140,209_AL_.jpg",
+		soundtrack: "nu9mslgDcR4?start=4;end=6;",
 	},
 	{
 		title: "New Girl",
@@ -485,6 +499,7 @@ const tvShows = [
 		rate: "7,7",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMjA0MDc1NTk0Ml5BMl5BanBnXkFtZTgwMTk2ODA5NDM@._V1_UY209_CR13,0,140,209_AL_.jpg",
+		soundtrack: "aW3LEVGQ-lE",
 	},
 	{
 		title: "Marvel's Agents of S.H.I.E.L.D.",
@@ -495,6 +510,7 @@ const tvShows = [
 		rate: "7,5",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BOTJhMjhhZDItZTQxMi00NGM3LTliZjYtMjcyMWE2YzYwNTA0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR13,0,140,209_AL_.jpg",
+		soundtrack: "cB9vcpBX5rQ?start=0;end=15",
 	},
 	{
 		title: "You: Du wirst mich lieben",
@@ -503,8 +519,8 @@ const tvShows = [
 		descr:
 			"A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
 		rate: "7,8",
-		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		img: "https://images-na.ssl-images-amazon.com/images/I/919nsE-7TKL.jpg",
+		soundtrack: "V_i8mpZ1rmE?start=0;end=15",
 	},
 	{
 		title: "Dexter",
@@ -515,6 +531,7 @@ const tvShows = [
 		rate: "8,6",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMTM5MjkwMTI0MV5BMl5BanBnXkFtZTcwODQwMTc0OQ@@._V1_UY209_CR7,0,140,209_AL_.jpg",
+		soundtrack: "ej8-Rqo-VT4?start=8;end=23",
 	},
 	{
 		title: "Fear the Walking Dead",
@@ -525,6 +542,7 @@ const tvShows = [
 		rate: "6,9",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BYWNmY2Y1NTgtYTExMS00NGUxLWIxYWQtMjU4MjNkZjZlZjQ3XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_UX140_CR0,0,140,209_AL_.jpg",
+		soundtrack: "Aq8ASjhcrcM?start=2;end=17",
 	},
 	{
 		title: "Family Guy",
@@ -535,6 +553,7 @@ const tvShows = [
 		rate: "8,1",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BODEwZjEzMjAtNjQxMy00Yjc4LWFlMDAtYjhjZTAxNDU3OTg3XkEyXkFqcGdeQXVyOTM2NTM4MjA@._V1_UY209_CR8,0,140,209_AL_.jpg",
+		soundtrack: "ohoGCgdUXDg?start=0;end=15",
 	},
 	{
 		title: "The Blacklist",
@@ -545,6 +564,7 @@ const tvShows = [
 		rate: "8",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BZDU1OGI3NWItZTliOS00OWYxLTliNDktYTFjODcxNmE1NTNmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "DkG50cc8d9E?start=0;end=15",
 	},
 	{
 		title: "Lost",
@@ -554,7 +574,8 @@ const tvShows = [
 			"The survivors of a plane crash are forced to work together in order to survive on a seemingly deserted tropical island.",
 		rate: "8,3",
 		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+			"https://m.media-amazon.com/images/M/MV5BNzhlY2E5NDUtYjJjYy00ODg3LWFkZWQtYTVmMzU4ZWZmOWJkXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg",
+		soundtrack: "9LDh8DefWpI?start=0;end=15",
 	},
 	{
 		title: "Peaky Blinders: Gangs of Birmingham",
@@ -564,7 +585,8 @@ const tvShows = [
 			"A gangster family epic set in 1919 Birmingham, England; centered on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby.",
 		rate: "8,8",
 		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+			"https://occ-0-33-37.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABXsdO9Z_eRpcsRpCKgfRNB-3sF9cOfHmMJjiRpV9d-QWK6fxbXcbU55sBNCY1e4g11e5XSRu-_FLrJ8nwRoVoiP3tfseA_HXtEs8jfes0_GlsPSQfHe2NLFuvHggew.jpg?r=0d4",
+		soundtrack: "KGD2N5hJ2e0?start=2;end=17",
 	},
 	{
 		title: "Dr. House",
@@ -575,16 +597,7 @@ const tvShows = [
 		rate: "8,7",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMDA4NjQzN2ItZDhhNC00ZjVlLWFjNTgtMTEyNDQyOGNjMDE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY209_CR1,0,140,209_AL_.jpg",
-	},
-	{
-		title: "Quantico",
-		publishDate: "(2015–2018)",
-		genre: "Crime, Drama, Mystery",
-		descr:
-			"A look at the lives of young FBI recruits training at the Quantico base in Virginia when one of them is suspected of being a sleeper terrorist.",
-		rate: "6,7",
-		img:
-			"https://m.media-amazon.com/images/M/MV5BMTkxNTg3MTc0Ml5BMl5BanBnXkFtZTgwMzYxNDIyNTM@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "5L9tAyMewCw?start=0;end=15",
 	},
 	{
 		title: "Orphan Black",
@@ -595,6 +608,7 @@ const tvShows = [
 		rate: "8,3",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BZjM1ZTVlMGYtNjVkZS00OGMzLWFjMmYtYTE3NjJhZDRlODY3XkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "uCyWUM4A60M?start=0;end=15",
 	},
 	{
 		title: "Homeland",
@@ -603,8 +617,8 @@ const tvShows = [
 		descr:
 			"A bipolar CIA operative becomes convinced a prisoner of war has been turned by al-Qaeda and is planning to carry out a terrorist attack on American soil.",
 		rate: "8,3",
-		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		img: "https://www.reputationpoll.com/uploads/2020/05/Homeland.jpg",
+		soundtrack: "5UgF4Y-S6fs?start=0;end=15",
 	},
 	{
 		title: "Blindspot",
@@ -613,7 +627,8 @@ const tvShows = [
 		descr: "Jane Doe is found in Times Square with no memory and mysterious tattoos on her body.",
 		rate: "7,4",
 		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+			"https://m.media-amazon.com/images/M/MV5BMDIyYzUwNjgtNDA1Mi00ZmQ3LThhNWQtN2RjZjczNjRlZmQ3XkEyXkFqcGdeQXVyNjMxNzcwOTI@._V1_.jpg",
+		soundtrack: "16_3-SZ0xpQ?start=0;end=15",
 	},
 	{
 		title: "Legends of Tomorrow",
@@ -624,6 +639,7 @@ const tvShows = [
 		rate: "6,8",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMTc1NTA2YWMtOTc1ZC00ZDk0LThmZDktODhhZjZiMjdkYmNkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR13,0,140,209_AL_.jpg",
+		soundtrack: "sbRJ5yBHj3A?start=0;end=15",
 	},
 	{
 		title: "The Handmaid's Tale: Der Report der Magd",
@@ -634,6 +650,7 @@ const tvShows = [
 		rate: "8,5",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMTU0MTI0MDAyM15BMl5BanBnXkFtZTgwMDg5MzYyNTM@._V1_UY209_CR1,0,140,209_AL_.jpg",
+		soundtrack: "FcYypAgV8Sg?start=0;end=15",
 	},
 	{
 		title: "Chilling Adventures of Sabrina",
@@ -644,6 +661,7 @@ const tvShows = [
 		rate: "7,6",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BNDJjYzk0ZTktNzQ1ZC00MmQ0LTk1NTYtNmMwMGE4NDM5ZjAyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR13,0,140,209_AL_.jpg",
+		soundtrack: "vsb8_KiUPqM?start=0;end=15",
 	},
 	{
 		title: "The Good Doctor",
@@ -652,18 +670,8 @@ const tvShows = [
 		descr:
 			"Shaun Murphy, a young surgeon with autism and Savant syndrome, is recruited into the surgical unit of a prestigious hospital.",
 		rate: "8,2",
-		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
-	},
-	{
-		title: "Jane the Virgin",
-		publishDate: "(2014–2019)",
-		genre: "Comedy",
-		descr:
-			"A young, devout Catholic woman discovers that she was accidentally artificially inseminated.",
-		rate: "7,8",
-		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		img: "https://upload.wikimedia.org/wikipedia/en/6/62/The_Good_Doctor_2017.png",
+		soundtrack: "sesHVJPXBTU?start=0;end=15",
 	},
 	{
 		title: "Glee",
@@ -673,17 +681,8 @@ const tvShows = [
 			"A group of ambitious misfits try to escape the harsh realities of high school by joining a glee club headed by a passionate Spanish teacher.",
 		rate: "6,7",
 		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
-	},
-	{
-		title: "South Park",
-		publishDate: "(1997– )",
-		genre: "Animation, Comedy",
-		descr:
-			"Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.",
-		rate: "8,7",
-		img:
-			"https://m.media-amazon.com/images/M/MV5BOGE2YWUzMDItNTg2Ny00NTUzLTlmZGYtNWMyNzVjMjQ3MThkXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY209_CR1,0,140,209_AL_.jpg",
+			"https://m.media-amazon.com/images/M/MV5BYWJhZjNjZjUtM2JlZC00ZWE3LWJmZDItMDRhMWJkMTJhZDhkXkEyXkFqcGdeQXVyMTkzODUwNzk@._V1_.jpg",
+		soundtrack: "7UHaup8TPaQ?start=0;end=15",
 	},
 	{
 		title: "Brooklyn Nine-Nine",
@@ -694,6 +693,7 @@ const tvShows = [
 		rate: "8,4",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BNzVkYWY4NzYtMWFlZi00YzkwLThhZDItZjcxYTU4ZTMzMDZmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "ourfSzoC7pA?start=0;end=15",
 	},
 	{
 		title: "Under the Dome",
@@ -704,6 +704,7 @@ const tvShows = [
 		rate: "6,6",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMjA3NDk0NzM1MF5BMl5BanBnXkFtZTcwOTYxMTk3OQ@@._V1_UY209_CR9,0,140,209_AL_.jpg",
+		soundtrack: "RjyTkCCFeZU?start=0;end=15",
 	},
 	{
 		title: "The Umbrella Academy",
@@ -713,7 +714,8 @@ const tvShows = [
 			"A family of former child heroes, now grown apart, must reunite to continue to protect the world.",
 		rate: "8",
 		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+			"https://m.media-amazon.com/images/M/MV5BNzA5MjkwYzMtNGY2MS00YWRjLThkNTktOTNmMzdlZjE3Y2IxXkEyXkFqcGdeQXVyMjkwMzMxODg@._V1_.jpg",
+		soundtrack: "vYwqBCskfsM?start=0;end=15",
 	},
 	{
 		title: "True Detective",
@@ -724,16 +726,7 @@ const tvShows = [
 		rate: "9",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMTUwMGM2ZmYtZGEyZC00OWQyLWI2Y2QtMTdjYzMxZGJmNjhjXkEyXkFqcGdeQXVyNjU2ODM5MjU@._V1_UY209_CR0,0,140,209_AL_.jpg",
-	},
-	{
-		title: "The OA",
-		publishDate: "(2016–2019)",
-		genre: "Drama, Fantasy, Mystery",
-		descr:
-			"Having gone missing seven years ago, the previously blind Prairie returns home, now in her twenties with her sight restored. While many believe she is a miracle, others worry that she could be dangerous.",
-		rate: "7,9",
-		img:
-			"https://m.media-amazon.com/images/M/MV5BMTY5OTkwNDkzOF5BMl5BanBnXkFtZTgwMDEyNzI1NzM@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "FxXRkqXfhYM?start=0;end=15",
 	},
 	{
 		title: "Desperate Housewives",
@@ -744,6 +737,7 @@ const tvShows = [
 		rate: "7,4",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BYzI2MTFjZDktYTZhNS00YTU2LWI5ZTMtM2MzNDU1YjNhNTJlXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_UY209_CR1,0,140,209_AL_.jpg",
+		soundtrack: "zP0phmL6s8M?start=0;end=15",
 	},
 	{
 		title: "Better Call Saul",
@@ -752,8 +746,8 @@ const tvShows = [
 		descr:
 			"The trials and tribulations of criminal lawyer Jimmy McGill in the time before he established his strip-mall law office in Albuquerque, New Mexico.",
 		rate: "8,7",
-		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		img: "https://i.pinimg.com/originals/f6/cd/4e/f6cd4e6fa01c26dda11b8f10f8a5b29a.jpg",
+		soundtrack: "ybobdx-H_Jc?start=0;end:13",
 	},
 	{
 		title: "Bates Motel",
@@ -764,6 +758,7 @@ const tvShows = [
 		rate: "8,2",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMzk4OTU5NTE2M15BMl5BanBnXkFtZTcwNTIxMDIyOQ@@._V1_UY209_CR8,0,140,209_AL_.jpg",
+		soundtrack: "6MQPjUvxUHk?start=0;end=15",
 	},
 	{
 		title: "Marvel's The Punisher",
@@ -774,6 +769,7 @@ const tvShows = [
 		rate: "8,5",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMTExODIwOTUxNzFeQTJeQWpwZ15BbWU4MDE5MDA0MTcz._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "ka7F8KtZgX4?start=0;end=15",
 	},
 	{
 		title: "Atypical",
@@ -782,18 +778,8 @@ const tvShows = [
 		descr:
 			"Sam, an 18-year-old on the autism spectrum, decides it's time to find a girlfriend, a journey that sets Sam's mom on her own life-changing path as her son seeks more independence.",
 		rate: "8,3",
-		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
-	},
-	{
-		title: "Der Denver-Clan",
-		publishDate: "(2017– )",
-		genre: "Drama",
-		descr:
-			"Follows two of America's wealthiest families as they feud for control over their fortune and their children.",
-		rate: "7,3",
-		img:
-			"https://m.media-amazon.com/images/M/MV5BZWFjMDhkY2YtMTljYi00MWNjLTgyNjQtN2NjNjQ3ZjZhMzJlXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_UY209_CR13,0,140,209_AL_.jpg",
+		img: "https://upload.wikimedia.org/wikipedia/en/d/d2/Atypical_p%C3%B3ster.jpg",
+		soundtrack: "ftQXr8fvu1A?start=0;end=15",
 	},
 	{
 		title: "This is Us: Das ist Leben",
@@ -804,6 +790,7 @@ const tvShows = [
 		rate: "8,7",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMDM2YTMzMWMtNmFhZi00ZWY4LTk1ZmUtMWExNzg3NDZmMTY4XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_UX140_CR0,0,140,209_AL_.jpg",
+		soundtrack: "9UMVyggM1Gs?start=0;end=15",
 	},
 	{
 		title: "The Good Place",
@@ -812,8 +799,8 @@ const tvShows = [
 		descr:
 			"Four people and their otherworldly frienemy struggle in the afterlife to define what it means to be good.",
 		rate: "8,2",
-		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		img: "https://static.next-episode.net/tv-shows-images/huge/the-good-place.jpg",
+		soundtrack: "uE-TrWspLHY?start=0;end=15",
 	},
 	{
 		title: "Marvel's Iron Fist",
@@ -824,6 +811,7 @@ const tvShows = [
 		rate: "6,5",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMjI5Mjg1NDcyOV5BMl5BanBnXkFtZTgwMjAxOTQ5MTI@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "M9GOW97NA4g?start=0;end=15",
 	},
 	{
 		title: "The Rain",
@@ -834,6 +822,7 @@ const tvShows = [
 		rate: "6,3",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BZjg2YmVhYTktODE5NC00MzYwLTljNmQtYTg5YzczOTEwZDc3XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_UY209_CR7,0,140,209_AL_.jpg",
+		soundtrack: "Wbo_f99eeKY?start=0;end=15",
 	},
 	{
 		title: "Mindhunter",
@@ -843,7 +832,8 @@ const tvShows = [
 			"Set in the late 1970s, two FBI agents are tasked with interviewing serial killers to solve open cases.",
 		rate: "8,6",
 		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+			"https://m.media-amazon.com/images/M/MV5BNWNmYzQ1ZWUtYTQ3ZS00Y2UwLTlkMDctZThlOTJkMGJiNzBiXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_.jpg",
+		soundtrack: "4htQOlEwayM?start=0;end=15",
 	},
 	{
 		title: "Revenge",
@@ -854,6 +844,7 @@ const tvShows = [
 		rate: "7,8",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMTY2NjA5MDc0OF5BMl5BanBnXkFtZTgwNTE4OTA5MjE@._V1_UY209_CR8,0,140,209_AL_.jpg",
+		soundtrack: "GsIh8K-VtXQ?start=0;end=15",
 	},
 	{
 		title: "Marvel's Luke Cage",
@@ -864,6 +855,7 @@ const tvShows = [
 		rate: "7,3",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMjAxOTM3NjEwMV5BMl5BanBnXkFtZTgwNTkyOTY4NTM@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "La_ArLTXYCg?start=0;end=15",
 	},
 	{
 		title: "Scandal",
@@ -872,8 +864,8 @@ const tvShows = [
 		descr:
 			"A former White House Communications Director starts her own crisis management firm only to realize her clients are not the only ones with secrets.",
 		rate: "7,7",
-		img:
-			"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+		img: "https://static.next-episode.net/tv-shows-images/huge/scandal.jpg",
+		soundtrack: "GgnlrSJeJ-c?start=0;end=15",
 	},
 	{
 		title: "Marvel's The Defenders",
@@ -884,6 +876,7 @@ const tvShows = [
 		rate: "7,3",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BNWU4NmY3MTMtMTBmMi00NjFjLTkwMmItYWZhZWUwNDg5M2ExXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "Qo_kUQ5tcBE?start=0;end=15",
 	},
 	{
 		title: "Big Little Lies",
@@ -894,6 +887,7 @@ const tvShows = [
 		rate: "8,5",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BZmNjYzdjN2ItOTBlNy00Mjc0LWE4YmMtYTQ4ZjQzNTMyNDc4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "_p7mwsrsEQM?start=0;end=15",
 	},
 	{
 		title: "Insatiable",
@@ -904,6 +898,7 @@ const tvShows = [
 		rate: "6,5",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BODUzODY1NzEtYjNiNy00NzEwLThhYzEtZGUxZjQ4MDRiNjY2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "oZNcBNcLf2c?start=0;end=15",
 	},
 	{
 		title: "The Mentalist",
@@ -914,6 +909,7 @@ const tvShows = [
 		rate: "8,1",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMTQ5OTgzOTczM15BMl5BanBnXkFtZTcwMDM2OTY4MQ@@._V1_UY209_CR8,0,140,209_AL_.jpg",
+		soundtrack: "SOEvPK9vAQk?start=0;end=15",
 	},
 	{
 		title: "The Crown",
@@ -924,6 +920,7 @@ const tvShows = [
 		rate: "8,7",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BNGI1ODkzZDQtZTYxYS00MTg1LWFlY2QtMTM5MGNhNWRhYmVmXkEyXkFqcGdeQXVyNjU2ODM5MjU@._V1_UY209_CR13,0,140,209_AL_.jpg",
+		soundtrack: "_46PNVriyOk?start=0;end=15",
 	},
 	{
 		title: "Chernobyl",
@@ -934,6 +931,7 @@ const tvShows = [
 		rate: "9,4",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BZGQ2YmMxZmEtYjI5OS00NzlkLTlkNTEtYWMyMzkyMzc2MDU5XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_UX140_CR0,0,140,209_AL_.jpg",
+		soundtrack: "nZM87N-3ob0?start=0;end=15",
 	},
 	{
 		title: "iZombie",
@@ -944,16 +942,7 @@ const tvShows = [
 		rate: "7,9",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BZWNhODE4NzAtN2JjOC00ODJjLThhNzAtMWM1NDg4ZDQxNzMzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR13,0,140,209_AL_.jpg",
-	},
-	{
-		title: "Reign",
-		publishDate: "(2013–2017)",
-		genre: "Drama, Fantasy",
-		descr:
-			"Mary, Queen of Scots, faces political and sexual intrigue in the treacherous world of the French court.",
-		rate: "7,5",
-		img:
-			"https://m.media-amazon.com/images/M/MV5BMjEwMDgzNjA1Ml5BMl5BanBnXkFtZTgwNjYyNDUzMTI@._V1_UY209_CR13,0,140,209_AL_.jpg",
+		soundtrack: "Lu5nXAuBMfk?start=2;end=17",
 	},
 	{
 		title: "Eine Reihe betrüblicher Ereignisse",
@@ -964,6 +953,7 @@ const tvShows = [
 		rate: "7,8",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMTYzMjA3OTgxOV5BMl5BanBnXkFtZTgwMjAwMDU5NjM@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "okFz3PgaQ5g?start=4;end=19",
 	},
 	{
 		title: "Criminal Minds",
@@ -974,6 +964,7 @@ const tvShows = [
 		rate: "8,1",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BNGE2ZmFkZTYtNjRiOS00ZjE3LThjOWMtZTViZjRmNDFjNTQwXkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_UX140_CR0,0,140,209_AL_.jpg",
+		soundtrack: "JS70MFXbYEc?start=0;end=15",
 	},
 	{
 		title: "Scream",
@@ -984,6 +975,7 @@ const tvShows = [
 		rate: "7,2",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BNjVmY2M3ZTUtMDhkZC00ODk4LTkwMjktNDRjNGRjYTIxZGZiXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_UX140_CR0,0,140,209_AL_.jpg",
+		soundtrack: "hvj87EqtzeI?start=0;end=15",
 	},
 	{
 		title: "Spuk in Hill House",
@@ -994,6 +986,7 @@ const tvShows = [
 		rate: "8,7",
 		img:
 			"https://m.media-amazon.com/images/M/MV5BMTU4NzA4MDEwNF5BMl5BanBnXkFtZTgwMTQxODYzNjM@._V1_UY209_CR0,0,140,209_AL_.jpg",
+		soundtrack: "PNWbvteIfeQ?start=0;end=15",
 	},
 ]
 

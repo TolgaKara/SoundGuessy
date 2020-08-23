@@ -5,9 +5,11 @@
  * The Data is saved by the code s7L2PVdrb_8
  *
  */
+
 /** 15 sek duration */
 
 /** String zusammensetzung
  * ROOT : https://www.youtube.com/watch?=
  * VIDKEY : gmyCRJkKeKs
  */
+"use strict";
