@@ -49,7 +49,7 @@
 			class="grid grid-cols-3 grid-rows-1 text-center bg-orange-700 mt-2 p-4 shadow-md border-t-4 border-b-4 border-orange-300"
 		>
 			<div class="text-2xl font-bold text-white points">
-				<span class="font-bold">Points: </span> <span class="font-normal">0</span>
+				<span class="font-bold">Points: </span> <span class="font-normal" id="point">0</span>
 			</div>
 
 			<div class="text-2xl font-bold text-white rounds">
@@ -69,6 +69,7 @@
 			class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 grid-rows-3 col-gap-1 row-gap-2 mt-10"
 		>
 			<div
+				onclick="clickedCard(0)"
 				class="answer-option bg-white shadow-lg rounded-lg grid grid-cols-1 grid-rows-1 w-40 m-auto"
 			>
 				<img
@@ -77,13 +78,16 @@
 					src="https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_UY209_CR7,0,140,209_AL_.jpg"
 					alt=""
 				/>
-				<h1 class="text-center font-bold text-lg" id="answer-title-0">Game of thrones</h1>
+				<h1 class="answer-title text-center font-bold text-lg" id="answer-title-0">
+					Game of thrones
+				</h1>
 			</div>
 
-			<div class="answer-option bg-green-300 rounded-lg grid grid-cols-1 grid-rows-1 w-40 m-auto">
-				<h1 class="text-teal-800 text-center font-bold text-lg italic">Hallo</h1>
+			<div class="bg-green-300 rounded-lg grid grid-cols-1 grid-rows-1 w-40 m-auto">
+				<h1 class="text-teal-800 text-center font-bold text-lg italic" id="hint-text"></h1>
 			</div>
 			<div
+				onclick="clickedCard(1)"
 				class="answer-option bg-white shadow-lg rounded-lg grid grid-cols-1 grid-rows-1 w-40 m-auto"
 			>
 				<img
@@ -92,9 +96,12 @@
 					src="https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_UY209_CR7,0,140,209_AL_.jpg"
 					alt=""
 				/>
-				<h1 class="text-center font-bold text-lg" id="answer-title-1">Game of thrones</h1>
+				<h1 class="answer-title text-center font-bold text-lg" id="answer-title-1">
+					Game of thrones
+				</h1>
 			</div>
 			<div
+				onclick="clickedCard(2)"
 				class="answer-option bg-white shadow-lg rounded-lg grid grid-cols-1 grid-rows-1 w-40 m-auto"
 			>
 				<img
@@ -103,7 +110,9 @@
 					src="https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_UY209_CR7,0,140,209_AL_.jpg"
 					alt=""
 				/>
-				<h1 class="text-center font-bold text-lg" id="answer-title-2">Game of thrones</h1>
+				<h1 class="answer-title text-center font-bold text-lg" id="answer-title-2">
+					Game of thrones
+				</h1>
 			</div>
 			<div class="self-center text-center gap-1">
 				<button
@@ -122,6 +131,7 @@
 				</button>
 			</div>
 			<div
+				onclick="clickedCard(3)"
 				class="answer-option bg-white shadow-lg rounded-lg grid grid-cols-1 grid-rows-1 w-40 m-auto"
 			>
 				<img
@@ -130,7 +140,9 @@
 					src="https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_UY209_CR7,0,140,209_AL_.jpg"
 					alt=""
 				/>
-				<h1 class="text-center font-bold text-lg" id="answer-title-3">Game of thrones</h1>
+				<h1 class="answer-title text-center font-bold text-lg" id="answer-title-3">
+					Game of thrones
+				</h1>
 			</div>
 		</div>
 
@@ -139,7 +151,7 @@
 			width="500"
 			height="500"
 			frameborder="0"
-			class="youtube-player"
+			class="youtube-player hidden"
 			allow="autoplay"
 		></iframe>
 

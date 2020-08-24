@@ -98,14 +98,62 @@ function checkAnswer() {
 	if (round > maxRound) {
 		showEndScreen()
 	}
+
+	document.querySelectorAll(".answer-title").forEach((cardTitle) => {
+		let isCardSelected =
+			cardTitle.classList.contains("bg-yellow-300") &&
+			cardTitle.classList.contains("text-indigo-500")
+		if (isCardSelected) {
+			if (cardTitle.innerHTML === correctAnswer) {
+				console.log("You Won")
+				//TODO Alert that you won and add to the Points
+			} else {
+				console.log("You lost")
+				//TODO Alert that you lost
+			}
+		}
+	})
+
+	//TODO Nothing was selected
+
 	document.querySelector("#current-round").innerHTML = round
 	console.log("checkAnwer()")
 }
 
 function giveHint() {
-	console.log("giveHint()")
+	fiveShows.forEach((show) => {
+		if (show.title === correctAnswer) {
+			document.querySelector("#hint-text").innerHTML = show.descr
+		}
+	})
+	let currentPoints = parseInt(document.querySelector("#point").innerHTML) - 2
+	document.querySelector("#point").innerHTML = currentPoints
 }
 
 function showEndScreen() {
 	return true
+}
+
+function clickedCard(cardNumber) {
+	removeClickedStyles()
+	console.log("Card ", cardNumber)
+	let clickedCardOutlined = document.querySelectorAll(".answer-option")[cardNumber]
+	let clickedTVTitle = document.querySelectorAll(".answer-title")[cardNumber]
+	console.log(clickedCardOutlined)
+	clickedCardOutlined.classList.add("border-8")
+	clickedCardOutlined.classList.add("border-yellow-300")
+	clickedTVTitle.classList.add("bg-yellow-300")
+	clickedTVTitle.classList.add("text-indigo-500")
+}
+
+function removeClickedStyles() {
+	document.querySelectorAll(".answer-option").forEach((card) => {
+		card.classList.remove("border-8")
+		card.classList.remove("border-yellow-300")
+	})
+
+	document.querySelectorAll(".answer-title").forEach((title) => {
+		title.classList.remove("bg-yellow-300")
+		title.classList.remove("text-indigo-500")
+	})
 }
