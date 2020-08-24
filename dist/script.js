@@ -22,10 +22,6 @@ window.onload = () => {
 	fiveShows = getFiveObjsFromArr(shuffledArrOfShows)
 	gameRoundQuestions = generateGameQuestions(fiveShows)
 	playGame(gameRoundQuestions)
-
-	//let guessedShowName = getGuessedShow(fiveShows)
-	//createTheElements()
-	console.log(fiveShows)
 }
 
 function shuffleShowArr(tvShowsArr) {
@@ -52,7 +48,7 @@ function generateGameQuestions(fiveShows) {
 	for (let show of fiveShows) {
 		questions = []
 		console.log(show.title)
-		questions.push(show.title)
+		questions.push(show)
 		for (let i = 0; i < shuffledTVShows.length; i++) {
 			if (counter >= 3) {
 				counter = 0
@@ -61,24 +57,39 @@ function generateGameQuestions(fiveShows) {
 
 			if (show.title !== shuffledTVShows[i].title) {
 				counter++
-				questions.push(shuffledTVShows[i].title)
+				questions.push(shuffledTVShows[i])
 			}
 		}
-		listOfQuestions.push(questions)
+		listOfQuestions.push([questions])
 	}
 	return listOfQuestions
 }
 
 function playGame(gameRoundQuestions) {
 	let roundIndex = parseInt(document.querySelector("#current-round").innerHTML) - 1
-	correctAnswer = gameRoundQuestions[roundIndex][0]
-	let shuffleGameArr = shuffleShowArr(gameRoundQuestions[roundIndex])
+	correctAnswer = gameRoundQuestions[roundIndex][roundIndex][0].title
+	let shuffleGameArr = shuffleShowArr(gameRoundQuestions[roundIndex][roundIndex])
 	changeElementOnWebpage(shuffleGameArr)
 }
 
 function changeElementOnWebpage(gameArr) {
+	let roundIndex = parseInt(document.querySelector("#current-round").innerHTML) - 1
+	let soundtrackKey = ""
+	gameArr.forEach((showObj, index) => {
+		document.querySelector(`#answer-img-${index}`).src = showObj.img
+		document.querySelector(`#answer-title-${index}`).innerHTML = showObj.title
+		if (showObj.title === correctAnswer) {
+			soundtrackKey = showObj.soundtrack
+		}
+	})
+
+	let ytURL = getSolidEmbedYTUrl(soundtrackKey)
+
 	console.log(gameArr)
-	document.querySelector("#answer-options > div:nth-child(1) > h1").innerHTML = gameArr[0]
+}
+
+function getSolidEmbedYTUrl(soundtrackKey) {
+	return `https://www.youtube.com/embed/${soundtrackKey}`
 }
 
 function checkAnswer() {
