@@ -11,3 +11,27 @@
  * ROOT : https://www.youtube.com/watch?=
  * VIDKEY : gmyCRJkKeKs
  */
+
+window.onload = () => {
+	console.log("Loaded Page")
+	//console.log(tvShows)
+	let shuffledArrOfShows = shuffleShowArr()
+	let fiveShows = getFiveObjsFromArr(shuffledArrOfShows)
+	let guessedShowName = getGuessedShow(fiveShows)
+	createTheElements()
+	console.log(fiveShows)
+}
+
+function shuffleShowArr() {
+	for (let i = tvShows.length - 1; i > 1; i--) {
+		let j = Math.round(Math.random() * i)
+		let tempCard = tvShows[i]
+		tvShows[i] = tvShows[j]
+		tvShows[j] = tempCard
+	}
+	return tvShows
+}
+
+function getFiveObjsFromArr(shuffledArrOfShows) {
+	return shuffledArrOfShows.slice(0, 5)
+}
