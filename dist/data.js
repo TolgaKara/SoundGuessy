@@ -382,7 +382,7 @@ const tvShows = [
 		soundtrack: "f9ZqGFiKwA8?start=0;end=15",
 	},
 	{
-		title: "Gotham",
+		/**TODO GOTHAM IMG DOESNT LOAD */ title: "Gotham",
 		publishDate: "(2014–2019)",
 		genre: "Action, Crime, Drama",
 		descr:

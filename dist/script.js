@@ -82,14 +82,14 @@ function changeElementOnWebpage(gameArr) {
 			soundtrackKey = showObj.soundtrack
 		}
 	})
-
 	let ytURL = getSolidEmbedYTUrl(soundtrackKey)
+	document.querySelector(".youtube-player").src = ytURL
 
 	console.log(gameArr)
 }
 
 function getSolidEmbedYTUrl(soundtrackKey) {
-	return `https://www.youtube.com/embed/${soundtrackKey}`
+	return `https://www.youtube.com/embed/${soundtrackKey};autoplay=1&mute=0`
 }
 
 function checkAnswer() {
