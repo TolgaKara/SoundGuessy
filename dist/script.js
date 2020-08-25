@@ -20,8 +20,11 @@ let gameRoundQuestion
 window.onload = () => {
 	shuffledArrOfShows = shuffleShowArr(tvShows)
 	fiveShows = getFiveObjsFromArr(shuffledArrOfShows)
-	gameRoundQuestions = generateGameQuestions(fiveShows)
-	playGame(gameRoundQuestions)
+	gameRoundQuestion = generateGameQuestions(fiveShows)
+	playGame(gameRoundQuestion)
+	let guessSeconds = 15
+	display = document.querySelector("#timer")
+	timerCountdown(guessSeconds, display)
 }
 
 function shuffleShowArr(tvShowsArr) {
@@ -49,6 +52,7 @@ function generateGameQuestions(fiveShows) {
 		questions = []
 		console.log(show.title)
 		questions.push(show)
+		shuffledTVShows = shuffleShowArr(tvShows)
 		for (let i = 0; i < shuffledTVShows.length; i++) {
 			if (counter >= 3) {
 				counter = 0
@@ -67,9 +71,13 @@ function generateGameQuestions(fiveShows) {
 
 function playGame(gameRoundQuestions) {
 	let roundIndex = parseInt(document.querySelector("#current-round").innerHTML) - 1
-	correctAnswer = gameRoundQuestions[roundIndex][roundIndex][0].title
-	let shuffleGameArr = shuffleShowArr(gameRoundQuestions[roundIndex][roundIndex])
+	console.log("gameRoundQuestions: ", gameRoundQuestions)
+	correctAnswer = gameRoundQuestions[0][0][0].title
+
+	let shuffleGameArr = shuffleShowArr(gameRoundQuestions[0][0])
+	console.log(shuffleGameArr)
 	changeElementOnWebpage(shuffleGameArr)
+	document.getElementById("hint-text").innerHTML = ""
 }
 
 function changeElementOnWebpage(gameArr) {
@@ -82,42 +90,76 @@ function changeElementOnWebpage(gameArr) {
 			soundtrackKey = showObj.soundtrack
 		}
 	})
+	removeClickedStyles()
 	let ytURL = getSolidEmbedYTUrl(soundtrackKey)
 	document.querySelector(".youtube-player").src = ytURL
 
-	console.log(gameArr)
+	//console.log(gameArr)
 }
 
 function getSolidEmbedYTUrl(soundtrackKey) {
 	return `https://www.youtube.com/embed/${soundtrackKey};autoplay=1&mute=0`
 }
 
-function checkAnswer() {
-	let round = parseInt(document.querySelector("#current-round").innerHTML) + 1
-	let maxRound = parseInt(document.querySelector("#max-round").innerHTML)
-	if (round > maxRound) {
-		showEndScreen()
-	}
+function displayModal() {
+	var modal = document.getElementById("myModal")
+	modal.style.display = "block"
+}
 
-	document.querySelectorAll(".answer-title").forEach((cardTitle) => {
-		let isCardSelected =
-			cardTitle.classList.contains("bg-yellow-300") &&
-			cardTitle.classList.contains("text-indigo-500")
-		if (isCardSelected) {
-			if (cardTitle.innerHTML === correctAnswer) {
-				console.log("You Won")
-				//TODO Alert that you won and add to the Points
+function checkAnswer() {
+	let round = parseInt(document.querySelector("#current-round").innerHTML)
+	let maxRound = parseInt(document.querySelector("#max-round").innerHTML)
+	if (round >= maxRound) {
+		displayModal()
+		document.querySelector("body").classList.add("overflow-hidden")
+		document.querySelector("body").classList.add("m-0")
+		document.querySelector("body").classList.add("h-full")
+		setTimeout(() => {
+			console.log("timeout")
+		}, 600000)
+		window.location.reload()
+	} else {
+		document.querySelectorAll(".answer-title").forEach((cardTitle) => {
+			let isCardSelected =
+				cardTitle.classList.contains("bg-yellow-300") &&
+				cardTitle.classList.contains("text-indigo-500")
+			console.log("isCardSelected: ", isCardSelected)
+			if (isCardSelected) {
+				if (cardTitle.innerHTML === correctAnswer) {
+					console.log("You Won")
+					//TODO Alert that you won
+					// Check if the game is finished
+					let currentRound = document.querySelector("#current-round").innerHTML
+					if (currentRound === 5) {
+						showEndScreen()
+					} else {
+						// add to the Points
+						let currentPoints = parseInt(document.querySelector("#point").innerHTML) + 5
+						document.querySelector("#point").innerHTML = currentPoints
+						//console.log("Game Round Questions: ", gameRoundQuestion)
+						gameRoundQuestion.shift()
+
+						playGame(gameRoundQuestion)
+						//console.log("Game Round Questions after the shift: ", gameRoundQuestion)
+					}
+
+					// Starting the next Round
+					//playGame()
+				} else {
+					console.log("You lost")
+					let currentPoints = parseInt(document.querySelector("#point").innerHTML) - 2
+					document.querySelector("#point").innerHTML = currentPoints
+					//TODO Alert that you lost
+				}
 			} else {
-				console.log("You lost")
-				//TODO Alert that you lost
+				console.log("nothing selected")
 			}
-		}
-	})
+		})
+	}
 
 	//TODO Nothing was selected
 
 	document.querySelector("#current-round").innerHTML = round
-	console.log("checkAnwer()")
 }
 
 function giveHint() {
@@ -130,16 +172,49 @@ function giveHint() {
 	document.querySelector("#point").innerHTML = currentPoints
 }
 
-function showEndScreen() {
-	return true
+function addPulseAnimation() {
+	document.querySelectorAll(".answer-option").forEach((showCard) => {
+		console.log("Adding Animate Pulse")
+		showCard.classList.add("animate-pulse")
+	})
+}
+
+function removePulseAnimation() {
+	document.querySelectorAll(".answer-option").forEach((showCard) => {
+		console.log("Removing Animate Pulse")
+		showCard.classList.remove("animate-pulse")
+	})
+}
+
+function timerCountdown(duration, display) {
+	var timer = duration,
+		minutes,
+		seconds
+	setInterval(function () {
+		seconds = parseInt(timer % 60, 10)
+
+		display.textContent = seconds
+
+		if (--timer < 0) {
+			let currentPoints = parseInt(document.querySelector("#point").innerHTML) - 5
+			document.querySelector("#point").innerHTML = currentPoints
+			shuffledArrOfShows = shuffleShowArr(tvShows)
+			fiveShows = getFiveObjsFromArr(shuffledArrOfShows)
+			gameRoundQuestion = generateGameQuestions(fiveShows)
+			playGame(gameRoundQuestion)
+
+			timer = duration
+		}
+	}, 1000)
 }
 
 function clickedCard(cardNumber) {
+	removePulseAnimation()
 	removeClickedStyles()
-	console.log("Card ", cardNumber)
+	//console.log("Card ", cardNumber)
 	let clickedCardOutlined = document.querySelectorAll(".answer-option")[cardNumber]
 	let clickedTVTitle = document.querySelectorAll(".answer-title")[cardNumber]
-	console.log(clickedCardOutlined)
+	//console.log(clickedCardOutlined)
 	clickedCardOutlined.classList.add("border-8")
 	clickedCardOutlined.classList.add("border-yellow-300")
 	clickedTVTitle.classList.add("bg-yellow-300")
@@ -156,4 +231,13 @@ function removeClickedStyles() {
 		title.classList.remove("bg-yellow-300")
 		title.classList.remove("text-indigo-500")
 	})
+}
+
+function refreshCurrentWindow() {
+	window.location.reload()
+}
+
+var span = document.getElementById("close-btn")
+span.onclick = function () {
+	modal.style.display = "none"
 }
