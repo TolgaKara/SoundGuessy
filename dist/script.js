@@ -18,6 +18,7 @@ let correctAnswer
 let gameRoundQuestion
 let showType
 let timerInterval
+let currentPoints
 
 window.onload = () => {
 	showType = sessionStorage["showType"]
@@ -74,7 +75,7 @@ function generateGameQuestions(fiveShows) {
 	let questions = []
 	for (let show of fiveShows) {
 		questions = []
-		console.log(show.title)
+		//console.log(show.title)
 		questions.push(show)
 		shuffledTVShows = shuffleShowArr(shuffledTVShows)
 		for (let i = 0; i < shuffledTVShows.length; i++) {
@@ -95,11 +96,11 @@ function generateGameQuestions(fiveShows) {
 
 function playGame(gameRoundQuestions) {
 	let roundIndex = parseInt(document.querySelector("#current-round").innerHTML) - 1
-	console.log("gameRoundQuestions: ", gameRoundQuestions)
+	//console.log("gameRoundQuestions: ", gameRoundQuestions)
 	correctAnswer = gameRoundQuestions[0][0][0].title
 
 	let shuffleGameArr = shuffleShowArr(gameRoundQuestions[0][0])
-	console.log(shuffleGameArr)
+	//console.log(shuffleGameArr)
 	changeElementOnWebpage(shuffleGameArr)
 	document.getElementById("hint-text").innerHTML = ""
 }
@@ -140,7 +141,24 @@ function showEndScreen() {
 
 function displayModal() {
 	let modal = document.getElementById("myModal")
+	let successMessage = document.querySelector(".success-message > p")
+	let messageTitle = document.querySelector(".success-message > h3")
+	//TODO Rename successMessage to messageBody
+	if (currentPoints <= 5) {
+		messageTitle.classList.add("text-red-500")
+		messageTitle.innerHTML = "<strong> Failure </strong>"
+		successMessage.innerHTML = "What are you doing? Fineally watch these shows!!!"
+	} else if (currentPoints > 5) {
+		messageTitle.classList.add("text-green-500")
+		messageTitle.innerHTML = "<strong> SUCCESS </strong>"
+
+		successMessage.innerHTML = "You are a person of Culture"
+	}
+
 	modal.style.display = "block"
+	clearInterval(timerInterval)
+	document.querySelector(".youtube-player").src = ""
+	throw new Error("The Game has stopped, because you must select from the Button")
 }
 
 function removeModal() {
@@ -151,7 +169,9 @@ function removeModal() {
 function checkAnswer() {
 	let round = parseInt(document.querySelector("#current-round").innerHTML)
 	let maxRound = parseInt(document.querySelector("#max-round").innerHTML)
+
 	if (round === maxRound) {
+		//TODO This will be triggered if the rounds end but the points doesnt get added
 		displayModal()
 		document.querySelector("body").classList.add("overflow-hidden")
 		document.querySelector("body").classList.add("m-0")
@@ -165,43 +185,39 @@ function checkAnswer() {
 				cardTitle.classList.contains("text-indigo-500")
 			console.log("isCardSelected: ", isCardSelected)
 			if (isCardSelected) {
+				console.log(cardTitle.innerHTML + "===" + correctAnswer)
 				if (cardTitle.innerHTML === correctAnswer) {
-					console.log("You Won")
-					//TODO Alert that you won
-					// Check if the game is finished
+					//console.log("You Won")
 
 					document.querySelector("#current-round").innerHTML = round++
 					clearInterval(timerInterval)
-					console.log(("cardTitle.innerHTML: ", typeof round))
-					console.log(("correctAnwer: ", document.querySelector("#current-round").innerHTML))
+					//console.log(("cardTitle.innerHTML: ", typeof round))
+					//console.log(("correctAnwer: ", document.querySelector("#current-round").innerHTML))
 					let display = document.querySelector("#timer")
 					timerCountdown(15, display)
 
-					let currentRound = document.querySelector("#current-round").innerHTML
+					currentRound = document.querySelector("#current-round").innerHTML
+					console.log("triggereddd z.190")
 
-					if (currentRound === "5") {
-						displayModal
-					} else {
-						// add to the Points
-						let currentPoints = parseInt(document.querySelector("#point").innerHTML) + 5
-						document.querySelector("#point").innerHTML = currentPoints
-						//console.log("Game Round Questions: ", gameRoundQuestion)
-						gameRoundQuestion.shift()
+					// add to the Points
+					currentPoints = parseInt(document.querySelector("#point").innerHTML) + 5
+					document.querySelector("#point").innerHTML = currentPoints
+					//console.log("Game Round Questions: ", gameRoundQuestion)
+					gameRoundQuestion.shift()
 
-						playGame(gameRoundQuestion)
-						//console.log("Game Round Questions after the shift: ", gameRoundQuestion)
-					}
+					playGame(gameRoundQuestion)
+					//console.log("Game Round Questions after the shift: ", gameRoundQuestion)
 
 					// Starting the next Round
 					//playGame()
 				} else {
-					console.log("You lost")
-					let currentPoints = parseInt(document.querySelector("#point").innerHTML) - 2
+					//console.log("You lost")
+					currentPoints = parseInt(document.querySelector("#point").innerHTML) - 2
 					document.querySelector("#point").innerHTML = currentPoints
 					//TODO Alert that you lost
 				}
 			} else {
-				console.log("nothing selected")
+				//console.log("nothing selected")
 			}
 		})
 	}
@@ -217,20 +233,20 @@ function giveHint() {
 			document.querySelector("#hint-text").innerHTML = show.descr
 		}
 	})
-	let currentPoints = parseInt(document.querySelector("#point").innerHTML) - 2
+	currentPoints = parseInt(document.querySelector("#point").innerHTML) - 2
 	document.querySelector("#point").innerHTML = currentPoints
 }
 
 function addPulseAnimation() {
 	document.querySelectorAll(".answer-option").forEach((showCard) => {
-		console.log("Adding Animate Pulse")
+		//console.log("Adding Animate Pulse")
 		showCard.classList.add("animate-pulse")
 	})
 }
 
 function removePulseAnimation() {
 	document.querySelectorAll(".answer-option").forEach((showCard) => {
-		console.log("Removing Animate Pulse")
+		//console.log("Removing Animate Pulse")
 		showCard.classList.remove("animate-pulse")
 	})
 }
@@ -258,12 +274,12 @@ function timerCountdown(duration, display) {
 		display.textContent = seconds
 		if (--timer < 0) {
 			let currentRound = document.querySelector("#current-round").innerHTML
-			console.log(typeof currentRound)
+			//console.log(typeof currentRound)
 			if (currentRound === "5") {
 				displayModal()
 				clearInterval(timerInterval)
 			} else {
-				let currentPoints = parseInt(document.querySelector("#point").innerHTML) - 5
+				currentPoints = parseInt(document.querySelector("#point").innerHTML) - 5
 				let currentRound = parseInt(document.querySelector("#current-round").innerHTML) + 1
 				document.querySelector("#current-round").innerHTML = currentRound
 				document.querySelector("#point").innerHTML = currentPoints
