@@ -17,10 +17,10 @@ let fiveShows
 let correctAnswer
 let gameRoundQuestion
 let showType
+let timerInterval
 
 window.onload = () => {
 	showType = sessionStorage["showType"]
-	console.log(showType)
 	if (showType === "tvShows") {
 		shuffledArrOfShows = shuffleShowArr(collectionOfShows.tvShows)
 	} else if (showType === "disneyShows") {
@@ -34,8 +34,8 @@ window.onload = () => {
 	fiveShows = getFiveObjsFromArr(shuffledArrOfShows)
 	gameRoundQuestion = generateGameQuestions(fiveShows)
 	playGame(gameRoundQuestion)
-	let guessSeconds = 5
-	display = document.querySelector("#timer")
+	let guessSeconds = 20
+	let display = document.querySelector("#timer")
 	timerCountdown(guessSeconds, display)
 }
 
@@ -139,21 +139,24 @@ function showEndScreen() {
 }
 
 function displayModal() {
-	var modal = document.getElementById("myModal")
+	let modal = document.getElementById("myModal")
 	modal.style.display = "block"
+}
+
+function removeModal() {
+	let modal = document.getElementById("myModal")
+	modal.style.display = "hidden"
 }
 
 function checkAnswer() {
 	let round = parseInt(document.querySelector("#current-round").innerHTML)
 	let maxRound = parseInt(document.querySelector("#max-round").innerHTML)
-	if (round >= maxRound) {
+	if (round === maxRound) {
 		displayModal()
 		document.querySelector("body").classList.add("overflow-hidden")
 		document.querySelector("body").classList.add("m-0")
 		document.querySelector("body").classList.add("h-full")
-		setTimeout(() => {
-			console.log("timeout")
-		}, 600000)
+
 		window.location.reload()
 	} else {
 		document.querySelectorAll(".answer-title").forEach((cardTitle) => {
@@ -166,7 +169,16 @@ function checkAnswer() {
 					console.log("You Won")
 					//TODO Alert that you won
 					// Check if the game is finished
+
+					document.querySelector("#current-round").innerHTML = round++
+					clearInterval(timerInterval)
+					console.log(("cardTitle.innerHTML: ", typeof round))
+					console.log(("correctAnwer: ", document.querySelector("#current-round").innerHTML))
+					let display = document.querySelector("#timer")
+					timerCountdown(15, display)
+
 					let currentRound = document.querySelector("#current-round").innerHTML
+
 					if (currentRound === "5") {
 						displayModal
 					} else {
@@ -223,7 +235,7 @@ function removePulseAnimation() {
 	})
 }
 
-function getTheDeckOfCards() {
+function getTheTypeOfCards() {
 	showType = sessionStorage["showType"]
 
 	if (showType === "tvShows") {
@@ -240,11 +252,10 @@ function getTheDeckOfCards() {
 function timerCountdown(duration, display) {
 	var timer = duration,
 		seconds
-	let timerInterval = setInterval(function () {
+	timerInterval = setInterval(function () {
 		seconds = parseInt(timer % 60, 10)
 
 		display.textContent = seconds
-
 		if (--timer < 0) {
 			let currentRound = document.querySelector("#current-round").innerHTML
 			console.log(typeof currentRound)
@@ -256,7 +267,7 @@ function timerCountdown(duration, display) {
 				let currentRound = parseInt(document.querySelector("#current-round").innerHTML) + 1
 				document.querySelector("#current-round").innerHTML = currentRound
 				document.querySelector("#point").innerHTML = currentPoints
-				shuffledArrOfShows = shuffleShowArr(getTheDeckOfCards())
+				shuffledArrOfShows = shuffleShowArr(getTheTypeOfCards())
 				fiveShows = getFiveObjsFromArr(shuffledArrOfShows)
 				gameRoundQuestion = generateGameQuestions(fiveShows)
 				playGame(gameRoundQuestion)
