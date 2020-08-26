@@ -16,9 +16,21 @@ let shuffledArrOfShows
 let fiveShows
 let correctAnswer
 let gameRoundQuestion
+let showType
 
 window.onload = () => {
-	shuffledArrOfShows = shuffleShowArr(tvShows)
+	showType = sessionStorage["showType"]
+	console.log(showType)
+	if (showType === "tvShows") {
+		shuffledArrOfShows = shuffleShowArr(collectionOfShows.tvShows)
+	} else if (showType === "disneyShows") {
+		shuffledArrOfShows = shuffleShowArr(collectionOfShows.disneyShows)
+	} else if (showType === "animeShows") {
+		shuffledArrOfShows = shuffleShowArr(collectionOfShows.animeShows)
+	} else {
+		shuffledArrOfShows = shuffleShowArr(collectionOfShows.tvShows)
+	}
+
 	fiveShows = getFiveObjsFromArr(shuffledArrOfShows)
 	gameRoundQuestion = generateGameQuestions(fiveShows)
 	playGame(gameRoundQuestion)
@@ -43,7 +55,19 @@ function getFiveObjsFromArr(shuffledArrOfShows) {
 
 function generateGameQuestions(fiveShows) {
 	// Shuffle TV Show
-	let shuffledTVShows = shuffleShowArr(tvShows)
+	let shuffledTVShows = ""
+
+	showType = sessionStorage["showType"]
+
+	if (showType === "tvShows") {
+		shuffledTVShows = shuffleShowArr(collectionOfShows.tvShows)
+	} else if (showType === "disneyShows") {
+		shuffledTVShows = shuffleShowArr(collectionOfShows.disneyShows)
+	} else if (showType === "animeShows") {
+		shuffledTVShows = shuffleShowArr(collectionOfShows.animeShows)
+	} else {
+		shuffledTVShows = shuffleShowArr(collectionOfShows.tvShows)
+	}
 
 	let counter = 0
 	let listOfQuestions = []
@@ -52,7 +76,7 @@ function generateGameQuestions(fiveShows) {
 		questions = []
 		console.log(show.title)
 		questions.push(show)
-		shuffledTVShows = shuffleShowArr(tvShows)
+		shuffledTVShows = shuffleShowArr(shuffledTVShows)
 		for (let i = 0; i < shuffledTVShows.length; i++) {
 			if (counter >= 3) {
 				counter = 0
@@ -91,8 +115,17 @@ function changeElementOnWebpage(gameArr) {
 		}
 	})
 	removeClickedStyles()
-	let ytURL = getSolidEmbedYTUrl(soundtrackKey)
-	document.querySelector(".youtube-player").src = ytURL
+	let ytURL
+	if (showType === "tvShows") {
+		ytURL = getSolidEmbedYTUrl(soundtrackKey)
+		document.querySelector(".youtube-player").src = ytURL
+	} else if (showType === "disneyShows") {
+		let soundtrackFilePath = soundtrackKey
+		document.querySelector(".youtube-player").src = soundtrackFilePath
+	} else {
+		ytURL = getSolidEmbedYTUrl(soundtrackKey)
+		document.querySelector(".youtube-player").src = ytURL
+	}
 
 	//console.log(gameArr)
 }
@@ -190,6 +223,20 @@ function removePulseAnimation() {
 	})
 }
 
+function getTheDeckOfCards() {
+	showType = sessionStorage["showType"]
+
+	if (showType === "tvShows") {
+		return collectionOfShows.tvShows
+	} else if (showType === "disneyShows") {
+		return collectionOfShows.disneyShows
+	} else if (showType === "animeShows") {
+		return collectionOfShows.animeShows
+	} else {
+		return collectionOfShows.tvShows
+	}
+}
+
 function timerCountdown(duration, display) {
 	var timer = duration,
 		seconds
@@ -209,7 +256,7 @@ function timerCountdown(duration, display) {
 				let currentRound = parseInt(document.querySelector("#current-round").innerHTML) + 1
 				document.querySelector("#current-round").innerHTML = currentRound
 				document.querySelector("#point").innerHTML = currentPoints
-				shuffledArrOfShows = shuffleShowArr(tvShows)
+				shuffledArrOfShows = shuffleShowArr(getTheDeckOfCards())
 				fiveShows = getFiveObjsFromArr(shuffledArrOfShows)
 				gameRoundQuestion = generateGameQuestions(fiveShows)
 				playGame(gameRoundQuestion)
