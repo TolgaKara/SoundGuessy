@@ -990,6 +990,99 @@ const tvShows = [
 	},
 ]
 
-const disneyShows = []
+const disneyShows = [
+  {
+    title: 'Alice in Wonderland'
+    descr: ''
+    img: ''
+    soundtrack: ''
+  },
+  {
+    title: 'Ratatouille'
+    descr: ''
+    img: ''
+    soundtrack: ''
+  },
+  {
+    title: 'Peter Pan'
+    descr: ''
+    img: ''
+    soundtrack: ''
+  },
+  {
+    title: 'The Nightmare Before Christmas'
+    descr: ''
+    img: ''
+    soundtrack: ''
+  },
+  {
+    title: 'Frozen'
+    descr: ''
+    img: ''
+    soundtrack: ''
+  },
+  {
+    title: 'The Jungle Book'
+    descr: ''
+    img: ''
+    soundtrack: ''
+  },
+  {
+    title: 'Mulan'
+    descr: ''
+    img: ''
+    soundtrack: ''
+  },
+  {
+    title: 'Moana'
+    descr: ''
+    img: ''
+    soundtrack: ''
+  },
+  {
+    title: 'Tarzan'
+    descr: ''
+    img: ''
+    soundtrack: ''
+  },
+  {
+    title: 'Aladdin'
+    descr: ''
+    img: ''
+    soundtrack: ''
+  },
+  {
+    title: 'Hercules'
+    descr: ''
+    img: ''
+    soundtrack: ''
+  },
+  {
+    title: 'The Lion King'
+    descr: ''
+    img: ''
+    soundtrack: ''
+  },
+  {
+    title: 'Beauty and the Beast'
+    descr: ''
+    img: ''
+    soundtrack: ''
+  },
+  {
+    title: 'The Little Mermaid'
+    descr: ''
+    img: ''
+    soundtrack: ''
+  },
+  {
+    title: 'Toy Story'
+    descr: ''
+    img: ''
+    soundtrack: ''
+  },
+
+
+]
 
 const animeShows = []

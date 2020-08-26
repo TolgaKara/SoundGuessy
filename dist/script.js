@@ -22,7 +22,7 @@ window.onload = () => {
 	fiveShows = getFiveObjsFromArr(shuffledArrOfShows)
 	gameRoundQuestion = generateGameQuestions(fiveShows)
 	playGame(gameRoundQuestion)
-	let guessSeconds = 15
+	let guessSeconds = 5
 	display = document.querySelector("#timer")
 	timerCountdown(guessSeconds, display)
 }
@@ -98,7 +98,11 @@ function changeElementOnWebpage(gameArr) {
 }
 
 function getSolidEmbedYTUrl(soundtrackKey) {
-	return `https://www.youtube.com/embed/${soundtrackKey};autoplay=1&mute=0`
+	return `https://www.youtube.com/embed/${soundtrackKey}&autoplay=1&mute=0`
+}
+
+function showEndScreen() {
+	displayModal()
 }
 
 function displayModal() {
@@ -130,8 +134,8 @@ function checkAnswer() {
 					//TODO Alert that you won
 					// Check if the game is finished
 					let currentRound = document.querySelector("#current-round").innerHTML
-					if (currentRound === 5) {
-						showEndScreen()
+					if (currentRound === "5") {
+						displayModal
 					} else {
 						// add to the Points
 						let currentPoints = parseInt(document.querySelector("#point").innerHTML) + 5
@@ -188,22 +192,30 @@ function removePulseAnimation() {
 
 function timerCountdown(duration, display) {
 	var timer = duration,
-		minutes,
 		seconds
-	setInterval(function () {
+	let timerInterval = setInterval(function () {
 		seconds = parseInt(timer % 60, 10)
 
 		display.textContent = seconds
 
 		if (--timer < 0) {
-			let currentPoints = parseInt(document.querySelector("#point").innerHTML) - 5
-			document.querySelector("#point").innerHTML = currentPoints
-			shuffledArrOfShows = shuffleShowArr(tvShows)
-			fiveShows = getFiveObjsFromArr(shuffledArrOfShows)
-			gameRoundQuestion = generateGameQuestions(fiveShows)
-			playGame(gameRoundQuestion)
+			let currentRound = document.querySelector("#current-round").innerHTML
+			console.log(typeof currentRound)
+			if (currentRound === "5") {
+				displayModal()
+				clearInterval(timerInterval)
+			} else {
+				let currentPoints = parseInt(document.querySelector("#point").innerHTML) - 5
+				let currentRound = parseInt(document.querySelector("#current-round").innerHTML) + 1
+				document.querySelector("#current-round").innerHTML = currentRound
+				document.querySelector("#point").innerHTML = currentPoints
+				shuffledArrOfShows = shuffleShowArr(tvShows)
+				fiveShows = getFiveObjsFromArr(shuffledArrOfShows)
+				gameRoundQuestion = generateGameQuestions(fiveShows)
+				playGame(gameRoundQuestion)
 
-			timer = duration
+				timer = duration
+			}
 		}
 	}, 1000)
 }
