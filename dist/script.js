@@ -21,18 +21,9 @@ let timerInterval
 let currentPoints
 
 window.onload = () => {
-	showType = sessionStorage["showType"]
-	if (showType === "tvShows") {
-		shuffledArrOfShows = shuffleShowArr(collectionOfShows.tvShows)
-	} else if (showType === "disneyShows") {
-		shuffledArrOfShows = shuffleShowArr(collectionOfShows.disneyShows)
-	} else if (showType === "animeShows") {
-		shuffledArrOfShows = shuffleShowArr(collectionOfShows.animeShows)
-	} else {
-		shuffledArrOfShows = shuffleShowArr(collectionOfShows.tvShows)
-	}
+	//TODO Sometimes the same card is two - three times in there
 
-	fiveShows = getFiveObjsFromArr(shuffledArrOfShows)
+	fiveShows = getFiveObjsFromArr(getShuffledCardsByType())
 	gameRoundQuestion = generateGameQuestions(fiveShows)
 	playGame(gameRoundQuestion)
 	let guessSeconds = 20
@@ -54,12 +45,10 @@ function getFiveObjsFromArr(shuffledArrOfShows) {
 	return shuffledArrOfShows.slice(0, 5)
 }
 
-function generateGameQuestions(fiveShows) {
-	// Shuffle TV Show
-	let shuffledTVShows = ""
-
+function getShuffledCardsByType(){
 	showType = sessionStorage["showType"]
 
+	let shuffledTVShows;
 	if (showType === "tvShows") {
 		shuffledTVShows = shuffleShowArr(collectionOfShows.tvShows)
 	} else if (showType === "disneyShows") {
@@ -69,10 +58,13 @@ function generateGameQuestions(fiveShows) {
 	} else {
 		shuffledTVShows = shuffleShowArr(collectionOfShows.tvShows)
 	}
+	return shuffledTVShows
 
-	let counter = 0
-	let listOfQuestions = []
-	let questions = []
+}
+
+function generateGameQuestions(fiveShows) {
+	// Shuffle TV Show
+	let shuffledTVShows = getShuffledCardsByType(), counter = 0, listOfQuestions = [], questions = [];
 	for (let show of fiveShows) {
 		questions = []
 		//console.log(show.title)
@@ -95,8 +87,8 @@ function generateGameQuestions(fiveShows) {
 }
 
 function playGame(gameRoundQuestions) {
-	let roundIndex = parseInt(document.querySelector("#current-round").innerHTML) - 1
-	//console.log("gameRoundQuestions: ", gameRoundQuestions)
+	parseInt(document.querySelector("#current-round").innerHTML) - 1;
+//console.log("gameRoundQuestions: ", gameRoundQuestions)
 	correctAnswer = gameRoundQuestions[0][0][0].title
 
 	let shuffleGameArr = shuffleShowArr(gameRoundQuestions[0][0])
@@ -106,7 +98,7 @@ function playGame(gameRoundQuestions) {
 }
 
 function changeElementOnWebpage(gameArr) {
-	let roundIndex = parseInt(document.querySelector("#current-round").innerHTML) - 1
+	parseInt(document.querySelector("#current-round").innerHTML) - 1;
 	let soundtrackKey = ""
 	gameArr.forEach((showObj, index) => {
 		document.querySelector(`#answer-img-${index}`).src = showObj.img
@@ -121,8 +113,7 @@ function changeElementOnWebpage(gameArr) {
 		ytURL = getSolidEmbedYTUrl(soundtrackKey)
 		document.querySelector(".youtube-player").src = ytURL
 	} else if (showType === "disneyShows") {
-		let soundtrackFilePath = soundtrackKey
-		document.querySelector(".youtube-player").src = soundtrackFilePath
+		document.querySelector(".youtube-player").src = soundtrackKey
 	} else {
 		ytURL = getSolidEmbedYTUrl(soundtrackKey)
 		document.querySelector(".youtube-player").src = ytURL
@@ -134,11 +125,6 @@ function changeElementOnWebpage(gameArr) {
 function getSolidEmbedYTUrl(soundtrackKey) {
 	return `https://www.youtube.com/embed/${soundtrackKey}&autoplay=1&mute=0`
 }
-
-function showEndScreen() {
-	displayModal()
-}
-
 function displayModal() {
 	let modal = document.getElementById("myModal")
 	let successMessage = document.querySelector(".success-message > p")
@@ -184,6 +170,7 @@ function checkAnswer() {
 				cardTitle.classList.contains("bg-yellow-300") &&
 				cardTitle.classList.contains("text-indigo-500")
 			console.log("isCardSelected: ", isCardSelected)
+			let currentRound;
 			if (isCardSelected) {
 				console.log(cardTitle.innerHTML + "===" + correctAnswer)
 				if (cardTitle.innerHTML === correctAnswer) {
@@ -280,8 +267,7 @@ function timerCountdown(duration, display) {
 				clearInterval(timerInterval)
 			} else {
 				currentPoints = parseInt(document.querySelector("#point").innerHTML) - 5
-				let currentRound = parseInt(document.querySelector("#current-round").innerHTML) + 1
-				document.querySelector("#current-round").innerHTML = currentRound
+				document.querySelector("#current-round").innerHTML = parseInt(document.querySelector("#current-round").innerHTML) + 1
 				document.querySelector("#point").innerHTML = currentPoints
 				shuffledArrOfShows = shuffleShowArr(getTheTypeOfCards())
 				fiveShows = getFiveObjsFromArr(shuffledArrOfShows)
@@ -321,9 +307,4 @@ function removeClickedStyles() {
 
 function refreshCurrentWindow() {
 	window.location.reload()
-}
-
-var span = document.getElementById("close-btn")
-span.onclick = function () {
-	modal.style.display = "none"
 }
