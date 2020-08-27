@@ -1019,13 +1019,6 @@ let collectionOfShows = {
 			soundtrack: "../assets/audio/Jungle Book - Bare Necessities.mp3",
 		},
 		{
-			title: "The Jungle Book",
-			descr:
-				"concerns a young man-cub named Mowgli. A panther named Bagheera one day comes across an abandoned boat, in which a small baby is seen. ",
-			img: "../assets/img/the-jungle-book.png",
-			soundtrack: "../assets/audio/The_Jungle_Book_I_wanna_be_like_you_w_.mp3",
-		},
-		{
 			title: "Mulan",
 			descr:
 				"is a girl, the only child of her honored family. When the Huns invade China, one man from every family is called to arms. ",
