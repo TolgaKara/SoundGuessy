@@ -1040,13 +1040,6 @@ let collectionOfShows = {
 			soundtrack: "../assets/audio/moana-your-welcome.mp3",
 		},
 		{
-			title: "Moana",
-			descr:
-				"is a daughter of the chief of her tribe. Coming from a long line of navigators she sets off for a fabled island with the demigod Maui",
-			img: "../assets/img/moana.png",
-			soundtrack: "../assets/audio/Jemaine_Clement_Shiny_from_Moana_O.mp3",
-		},
-		{
 			title: "Tarzan",
 			descr:
 				"A man raised by gorillas must decide where he really belongs when he discovers he is a human.",
@@ -1061,25 +1054,11 @@ let collectionOfShows = {
 			soundtrack: "../assets/audio/Aladin-Prince Ali.mp3",
 		},
 		{
-			title: "Aladdin",
-			descr:
-				"is a poor street urchin who spends his time stealing food from the marketplace in the city of Agrabah. ",
-			img: "../assets/img/aladdin.png",
-			soundtrack: "../assets/audio/Aladdin___A_Whole_New_World_HD_1080p.mp3",
-		},
-		{
 			title: "The Lion King",
 			descr:
 				"A prince cursed to spend his days as a hideous monster sets out to regain his humanity by earning a young womans love",
 			img: "../assets/img/the-lion-king.png",
 			soundtrack: "../assets/audio/Lion King be prepared.mp3",
-		},
-		{
-			title: "The Lion King",
-			descr:
-				"A prince cursed to spend his days as a hideous monster sets out to regain his humanity by earning a young womans love",
-			img: "../assets/img/the-lion-king.png",
-			soundtrack: "../assets/audio/The_Lion_King_Official_Music_Video_T.mp3",
 		},
 		{
 			title: "Beauty and the Beast",

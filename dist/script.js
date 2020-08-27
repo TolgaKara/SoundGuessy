@@ -69,7 +69,6 @@ function generateGameQuestions(fiveShows) {
 		questions = []
 	for (let show of fiveShows) {
 		questions = []
-		//console.log(show.title)
 		questions.push(show)
 		shuffledTVShows = shuffleShowArr(shuffledTVShows)
 		for (let i = 0; i < shuffledTVShows.length; i++) {
@@ -83,6 +82,7 @@ function generateGameQuestions(fiveShows) {
 				questions.push(shuffledTVShows[i])
 			}
 		}
+
 		listOfQuestions.push([questions])
 	}
 	return listOfQuestions
@@ -90,11 +90,9 @@ function generateGameQuestions(fiveShows) {
 
 function playGame(gameRoundQuestions) {
 	parseInt(document.querySelector("#current-round").innerHTML) - 1
-	//console.log("gameRoundQuestions: ", gameRoundQuestions)
 	correctAnswer = gameRoundQuestions[0][0][0].title
 
 	let shuffleGameArr = shuffleShowArr(gameRoundQuestions[0][0])
-	//console.log(shuffleGameArr)
 	changeElementOnWebpage(shuffleGameArr)
 	document.getElementById("hint-text").innerHTML = ""
 }
@@ -120,13 +118,12 @@ function changeElementOnWebpage(gameArr) {
 		ytURL = getSolidEmbedYTUrl(soundtrackKey)
 		document.querySelector(".youtube-player").src = ytURL
 	}
-
-	//console.log(gameArr)
 }
 
 function getSolidEmbedYTUrl(soundtrackKey) {
 	return `https://www.youtube.com/embed/${soundtrackKey}&autoplay=1&mute=0`
 }
+
 function displayModal() {
 	let modal = document.getElementById("myModal")
 	let successMessage = document.querySelector(".success-message > p")
@@ -135,7 +132,7 @@ function displayModal() {
 	if (currentPoints <= 5) {
 		messageTitle.classList.add("text-red-500")
 		messageTitle.innerHTML = "<strong> Failure </strong>"
-		successMessage.innerHTML = "What are you doing? Fineally watch these shows!!!"
+		successMessage.innerHTML = "What are you doing? Finally watch these shows!!!"
 	} else if (currentPoints > 5) {
 		messageTitle.classList.add("text-green-500")
 		messageTitle.innerHTML = "<strong> SUCCESS </strong>"
@@ -158,62 +155,35 @@ function checkAnswer() {
 	let round = parseInt(document.querySelector("#current-round").innerHTML)
 	let maxRound = parseInt(document.querySelector("#max-round").innerHTML)
 
-	if (round === maxRound) {
-		//TODO This will be triggered if the rounds end but the points doesnt get added
-		displayModal()
-		document.querySelector("body").classList.add("overflow-hidden")
-		document.querySelector("body").classList.add("m-0")
-		document.querySelector("body").classList.add("h-full")
+	document.querySelectorAll(".answer-title").forEach((cardTitle) => {
+		let isCardSelected =
+			cardTitle.classList.contains("bg-yellow-300") &&
+			cardTitle.classList.contains("text-indigo-500")
+		let currentRound
+		if (isCardSelected) {
+			if (cardTitle.innerHTML === correctAnswer) {
+				document.querySelector("#current-round").innerHTML = round++
+				clearInterval(timerInterval)
+				let display = document.querySelector("#timer")
+				timerCountdown(15, display)
 
-		window.location.reload()
-	} else {
-		document.querySelectorAll(".answer-title").forEach((cardTitle) => {
-			let isCardSelected =
-				cardTitle.classList.contains("bg-yellow-300") &&
-				cardTitle.classList.contains("text-indigo-500")
-			console.log("isCardSelected: ", isCardSelected)
-			let currentRound
-			if (isCardSelected) {
-				console.log(cardTitle.innerHTML + "===" + correctAnswer)
-				if (cardTitle.innerHTML === correctAnswer) {
-					//console.log("You Won")
+				currentRound = document.querySelector("#current-round").innerHTML
 
-					document.querySelector("#current-round").innerHTML = round++
-					clearInterval(timerInterval)
-					//console.log(("cardTitle.innerHTML: ", typeof round))
-					//console.log(("correctAnwer: ", document.querySelector("#current-round").innerHTML))
-					let display = document.querySelector("#timer")
-					timerCountdown(15, display)
-
-					currentRound = document.querySelector("#current-round").innerHTML
-					console.log("triggereddd z.190")
-
-					// add to the Points
-					currentPoints = parseInt(document.querySelector("#point").innerHTML) + 5
-					document.querySelector("#point").innerHTML = currentPoints
-					//console.log("Game Round Questions: ", gameRoundQuestion)
-					gameRoundQuestion.shift()
-
-					playGame(gameRoundQuestion)
-					//console.log("Game Round Questions after the shift: ", gameRoundQuestion)
-
-					// Starting the next Round
-					//playGame()
-				} else {
-					//console.log("You lost")
-					currentPoints = parseInt(document.querySelector("#point").innerHTML) - 2
-					document.querySelector("#point").innerHTML = currentPoints
-					//TODO Alert that you lost
-				}
+				currentPoints = parseInt(document.querySelector("#point").innerHTML) + 5
+				document.querySelector("#point").innerHTML = currentPoints
+				gameRoundQuestion.shift()
+				playGame(gameRoundQuestion)
 			} else {
-				//console.log("nothing selected")
+				currentPoints = parseInt(document.querySelector("#point").innerHTML) - 2
+				document.querySelector("#point").innerHTML = currentPoints
 			}
-		})
-	}
-
-	//TODO Nothing was selected
-
+		}
+	})
 	document.querySelector("#current-round").innerHTML = round
+	if (round > maxRound) {
+		document.querySelector("#current-round").innerHTML = 5
+		displayModal()
+	}
 }
 
 function giveHint() {
@@ -228,14 +198,12 @@ function giveHint() {
 
 function addPulseAnimation() {
 	document.querySelectorAll(".answer-option").forEach((showCard) => {
-		//console.log("Adding Animate Pulse")
 		showCard.classList.add("animate-pulse")
 	})
 }
 
 function removePulseAnimation() {
 	document.querySelectorAll(".answer-option").forEach((showCard) => {
-		//console.log("Removing Animate Pulse")
 		showCard.classList.remove("animate-pulse")
 	})
 }
@@ -263,7 +231,6 @@ function timerCountdown(duration, display) {
 		display.textContent = seconds
 		if (--timer < 0) {
 			let currentRound = document.querySelector("#current-round").innerHTML
-			//console.log(typeof currentRound)
 			if (currentRound === "5") {
 				displayModal()
 				clearInterval(timerInterval)
@@ -286,10 +253,9 @@ function timerCountdown(duration, display) {
 function clickedCard(cardNumber) {
 	removePulseAnimation()
 	removeClickedStyles()
-	//console.log("Card ", cardNumber)
 	let clickedCardOutlined = document.querySelectorAll(".answer-option")[cardNumber]
 	let clickedTVTitle = document.querySelectorAll(".answer-title")[cardNumber]
-	//console.log(clickedCardOutlined)
+
 	clickedCardOutlined.classList.add("border-8")
 	clickedCardOutlined.classList.add("border-yellow-300")
 	clickedTVTitle.classList.add("bg-yellow-300")
