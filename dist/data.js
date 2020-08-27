@@ -9,7 +9,7 @@ let collectionOfShows = {
 			rate: "9,3",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_UY209_CR7,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_Official_Opening_Credits_Game_of_Throne.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_Official_Opening_Credits_Game_of_Throne.mp3",
 		},
 		{
 			title: "The Walking Dead",
@@ -20,7 +20,7 @@ let collectionOfShows = {
 			rate: "8,2",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BYTUwOTM3ZGUtMDZiNy00M2I3LWI1ZWEtYzhhNGMyZjI3MjBmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX140_CR0,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_The_Walking_Dead_Season_1_Opening_Cr.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_The_Walking_Dead_Season_1_Opening_Cr.mp3",
 		},
 		{
 			title: "The 100",
@@ -31,7 +31,7 @@ let collectionOfShows = {
 			rate: "7,7",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BNjRiYTIzZmUtMTFkNS00ZTM0LWE4ODAtMDliMGE4NzM5ZjVlXkEyXkFqcGdeQXVyNDQ0MTYzMDA@._V1_UY209_CR14,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/10s_to_25s_The_100_intros_from_season_1_4_HD_.mp3",
+			soundtrack: "../assets/audio/tvShows/10s_to_25s_The_100_intros_from_season_1_4_HD_.mp3",
 		},
 		{
 			title: "The Flash",
@@ -42,7 +42,7 @@ let collectionOfShows = {
 			rate: "7,7",
 			img:
 				"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
-			soundtrack: "./assets/audio/tvShows/15s_to_30s_The_Flash_CW_Soundtrack_The_Flash_The.mp3",
+			soundtrack: "../assets/audio/tvShows/15s_to_30s_The_Flash_CW_Soundtrack_The_Flash_The.mp3",
 		},
 		{
 			title: "Haus des Geldes",
@@ -53,7 +53,7 @@ let collectionOfShows = {
 			rate: "8,4",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BZDcxOGI0MDYtNTc5NS00NDUzLWFkOTItNDIxZjI0OTllNTljXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY209_CR0,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_Haus_des_Geldes_–_Intro.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_Haus_des_Geldes_–_Intro.mp3",
 		},
 		{
 			title: "The Big Bang Theory",
@@ -64,7 +64,7 @@ let collectionOfShows = {
 			rate: "8,1",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BY2FmZTY5YTktOWRlYy00NmIyLWE0ZmQtZDg2YjlmMzczZDZiXkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_UX140_CR0,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_The_Big_Bang_Theory_Intro_HD.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_The_Big_Bang_Theory_Intro_HD.mp3",
 		},
 		{
 			title: "Sherlock",
@@ -75,7 +75,7 @@ let collectionOfShows = {
 			rate: "9,1",
 			img:
 				"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_Sherlock_Opening_Titles_Season_1_Seas.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_Sherlock_Opening_Titles_Season_1_Seas.mp3",
 		},
 		{
 			title: "Vikings",
@@ -86,7 +86,7 @@ let collectionOfShows = {
 			rate: "8,5",
 			img:
 				"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_Vikings_Intro_2013_HD.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_Vikings_Intro_2013_HD.mp3",
 		},
 		{
 			title: "Breaking Bad",
@@ -97,7 +97,7 @@ let collectionOfShows = {
 			rate: "9,5",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY209_CR5,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_Breaking_Bad_Intro.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_Breaking_Bad_Intro.mp3",
 		},
 		{
 			title: "Prison Break",
@@ -108,17 +108,7 @@ let collectionOfShows = {
 			rate: "8,3",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BMTg3NTkwNzAxOF5BMl5BanBnXkFtZTcwMjM1NjI5MQ@@._V1_UY209_CR1,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_prison_break_intro_season_1.mp3",
-		},
-		{
-			title: "Die Simpsons",
-			publishDate: "(1989– )",
-			genre: "Animation, Comedy",
-			descr: "The satiric adventures of a working-class family in the misfit city of Springfield.",
-			rate: "8,7",
-			img:
-				"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
-			soundtrack: "./assets/audio/tvShows/8s_to_23s_Simpsons_Intro_HD.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_prison_break_intro_season_1.mp3",
 		},
 		{
 			title: "Once Upon a Time - Es war einmal ...",
@@ -129,7 +119,7 @@ let collectionOfShows = {
 			rate: "7,7",
 			img:
 				"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_Once_upon_a_time_intro_HD.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_Once_upon_a_time_intro_HD.mp3",
 		},
 		{
 			title: "Narcos",
@@ -140,7 +130,7 @@ let collectionOfShows = {
 			rate: "8,8",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BNmFjODU3YzgtMGUwNC00ZGI3LWFkZjQtMjkxZDc3NmQ1MzcyXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UY209_CR0,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/19s_to_34s_Narcos___Opening_Credits_HD___Netflix.mp3",
+			soundtrack: "../assets/audio/tvShows/19s_to_34s_Narcos___Opening_Credits_HD___Netflix.mp3",
 		},
 		{
 			title: "Westworld",
@@ -151,7 +141,7 @@ let collectionOfShows = {
 			rate: "8,7",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BMTRmYzNmOTctZjMwOS00ODZlLWJiZGQtNDg5NDY5NjE3MTczXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY209_CR0,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/20s_to_35s_Westworld_Intro_Opening_Credits___6.mp3",
+			soundtrack: "../assets/audio/tvShows/20s_to_35s_Westworld_Intro_Opening_Credits___6.mp3",
 		},
 		{
 			title: "Rick and Morty",
@@ -162,7 +152,7 @@ let collectionOfShows = {
 			rate: "9,2",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BZjRjOTFkOTktZWUzMi00YzMyLThkMmYtMjEwNmQyNzliYTNmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_UX182_CR0,0,182,268_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_Rick_and_Morty_Season_1_Intro.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_Rick_and_Morty_Season_1_Intro.mp3",
 		},
 		{
 			title: "Dark",
@@ -173,7 +163,7 @@ let collectionOfShows = {
 			rate: "8,8",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BZmY2YzU4NDktODIxYi00YWIyLWIzYTctODBkYzYzZjc0ODdlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UY209_CR0,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_Dark_Season_1_Opening_Credits_Intr.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_Dark_Season_1_Opening_Credits_Intr.mp3",
 		},
 		{
 			title: "Dexter",
@@ -184,7 +174,7 @@ let collectionOfShows = {
 			rate: "8,6",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BMTM5MjkwMTI0MV5BMl5BanBnXkFtZTcwODQwMTc0OQ@@._V1_UY209_CR7,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_Dexter_Intro_Morning_Routine_HD.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_Dexter_Intro_Morning_Routine_HD.mp3",
 		},
 		{
 			title: "Chilling Adventures of Sabrina",
@@ -195,7 +185,7 @@ let collectionOfShows = {
 			rate: "7,6",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BNDJjYzk0ZTktNzQ1ZC00MmQ0LTk1NTYtNmMwMGE4NDM5ZjAyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR13,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_Chilling_Adventures_of_Sabrina___Opening.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_Chilling_Adventures_of_Sabrina___Opening.mp3",
 		},
 		{
 			title: "Brooklyn Nine-Nine",
@@ -206,7 +196,7 @@ let collectionOfShows = {
 			rate: "8,4",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BNzVkYWY4NzYtMWFlZi00YzkwLThhZDItZjcxYTU4ZTMzMDZmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_UY209_CR0,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_Brooklyn_Nine_Nine_Opening_Theme_Song.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_Brooklyn_Nine_Nine_Opening_Theme_Song.mp3",
 		},
 		{
 			title: "True Detective",
@@ -217,7 +207,7 @@ let collectionOfShows = {
 			rate: "9",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BMTUwMGM2ZmYtZGEyZC00OWQyLWI2Y2QtMTdjYzMxZGJmNjhjXkEyXkFqcGdeQXVyNjU2ODM5MjU@._V1_UY209_CR0,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/5s_to_20s_True_Detective_Intro_Opening_Scene_H.mp3",
+			soundtrack: "../assets/audio/tvShows/5s_to_20s_True_Detective_Intro_Opening_Scene_H.mp3",
 		},
 		{
 			title: "Marvel's The Punisher",
@@ -228,7 +218,7 @@ let collectionOfShows = {
 			rate: "8,5",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BMTExODIwOTUxNzFeQTJeQWpwZ15BbWU4MDE5MDA0MTcz._V1_UY209_CR0,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_Marvel_s_Netflix_The_punisher_intro.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_Marvel_s_Netflix_The_punisher_intro.mp3",
 		},
 		{
 			title: "Marvel's Iron Fist",
@@ -239,7 +229,7 @@ let collectionOfShows = {
 			rate: "6,5",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BMjI5Mjg1NDcyOV5BMl5BanBnXkFtZTgwMjAxOTQ5MTI@._V1_UY209_CR0,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_Marvel_Television_Iron_Fist_Main_Title.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_Marvel_Television_Iron_Fist_Main_Title.mp3",
 		},
 		{
 			title: "Marvel's Luke Cage",
@@ -250,7 +240,7 @@ let collectionOfShows = {
 			rate: "7,3",
 			img:
 				"https://m.media-amazon.com/images/M/MV5BMjAxOTM3NjEwMV5BMl5BanBnXkFtZTgwNTkyOTY4NTM@._V1_UY209_CR0,0,140,209_AL_.jpg",
-			soundtrack: "./assets/audio/tvShows/0s_to_15s_Marvel_s_Luke_Cage___Opening_Credits___M.mp3",
+			soundtrack: "../assets/audio/tvShows/0s_to_15s_Marvel_s_Luke_Cage___Opening_Credits___M.mp3",
 		},
 	],
 

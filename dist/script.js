@@ -108,16 +108,8 @@ function changeElementOnWebpage(gameArr) {
 		}
 	})
 	removeClickedStyles()
-	let ytURL
-	if (showType === "tvShows") {
-		ytURL = getSolidEmbedYTUrl(soundtrackKey)
-		document.querySelector(".youtube-player").src = ytURL
-	} else if (showType === "disneyShows") {
-		document.querySelector(".youtube-player").src = soundtrackKey
-	} else {
-		ytURL = getSolidEmbedYTUrl(soundtrackKey)
-		document.querySelector(".youtube-player").src = ytURL
-	}
+
+	document.querySelector(".youtube-player").src = soundtrackKey
 }
 
 function getSolidEmbedYTUrl(soundtrackKey) {
