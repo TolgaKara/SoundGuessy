@@ -41,7 +41,7 @@ let collectionOfShows = {
 				"After being struck by lightning, Barry Allen wakes up from his coma to discover he's been given the power of super speed, becoming the next Flash, fighting crime in Central City.",
 			rate: "7,7",
 			img:
-				"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+				"https://assets.cdn.moviepilot.de/files/0294f841f6796d3f9a351d1a745ca0bf5964786766de5cc74619eeebb817/limit/500/1000/flash_ver28_xlg.jpg",
 			soundtrack: "../assets/audio/tvShows/15s_to_30s_The_Flash_CW_Soundtrack_The_Flash_The.mp3",
 		},
 		{
@@ -73,8 +73,7 @@ let collectionOfShows = {
 			descr:
 				"A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.",
 			rate: "9,1",
-			img:
-				"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+			img: "https://static.kino.de/wp-content/uploads/2012/02/sherlock.jpg",
 			soundtrack: "../assets/audio/tvShows/0s_to_15s_Sherlock_Opening_Titles_Season_1_Seas.mp3",
 		},
 		{
@@ -85,7 +84,7 @@ let collectionOfShows = {
 				"Vikings transports us to the brutal and mysterious world of Ragnar Lothbrok, a Viking warrior and farmer who yearns to explore - and raid - the distant shores across the ocean.",
 			rate: "8,5",
 			img:
-				"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+				"https://www.etonline.com/sites/default/files/styles/970xh/public/images/2018-10/historys-vikings-returns-for-the-mid-season-five-premiere-on-wed_nov-28-at-9-pm-et_pt_key-art-1.jpg?itok=W6dXHnmf",
 			soundtrack: "../assets/audio/tvShows/0s_to_15s_Vikings_Intro_2013_HD.mp3",
 		},
 		{
@@ -117,8 +116,7 @@ let collectionOfShows = {
 			descr:
 				"A young woman with a troubled past is drawn to a small town in Maine where fairy tales are to be believed.",
 			rate: "7,7",
-			img:
-				"https://m.media-amazon.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB466725069_.png",
+			img: "https://images-na.ssl-images-amazon.com/images/I/51X-5MCjEBL.jpg",
 			soundtrack: "../assets/audio/tvShows/0s_to_15s_Once_upon_a_time_intro_HD.mp3",
 		},
 		{
