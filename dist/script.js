@@ -42,27 +42,7 @@ function shuffleShowArr(tvShowsArr) {
 }
 
 function getFiveObjsFromArr(shuffledArrOfShows) {
-	/**
-	 * TODO
-	 * Loop over the shuffledArrOfShows
-	 * Check if the name is equal to name n1
-	 * Check if the soundtrack is equal soundtrack n1
-	 * If true then delete the show from the list and get another show
-	 * If false then its ok
-	 */
-
-	let shuffledFiveShows = shuffledArrOfShows.slice(5)
-	return shuffledFiveShows
-	/* let uniqueFiveShows = []
-  shuffledFiveShows.filter((show, nextShow) => {
-    if(show.title === nextShow.title){
-      if (show.soundtrack === nextShow.soundtrack) {
-
-      }else {
-
-      }
-    }
-  }) */
+	return shuffledArrOfShows.slice(5)
 }
 
 function getShuffledCardsByType() {

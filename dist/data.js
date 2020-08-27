@@ -1019,6 +1019,13 @@ let collectionOfShows = {
 			soundtrack: "../assets/audio/Jungle Book - Bare Necessities.mp3",
 		},
 		{
+			title: "The Jungle Book",
+			descr:
+				"concerns a young man-cub named Mowgli. A panther named Bagheera one day comes across an abandoned boat, in which a small baby is seen. ",
+			img: "../assets/img/the-jungle-book.png",
+			soundtrack: "../assets/audio/The_Jungle_Book_I_wanna_be_like_you_w_.mp3",
+		},
+		{
 			title: "Mulan",
 			descr:
 				"is a girl, the only child of her honored family. When the Huns invade China, one man from every family is called to arms. ",
@@ -1031,6 +1038,13 @@ let collectionOfShows = {
 				"is a daughter of the chief of her tribe. Coming from a long line of navigators she sets off for a fabled island with the demigod Maui",
 			img: "../assets/img/moana.png",
 			soundtrack: "../assets/audio/moana-your-welcome.mp3",
+		},
+		{
+			title: "Moana",
+			descr:
+				"is a daughter of the chief of her tribe. Coming from a long line of navigators she sets off for a fabled island with the demigod Maui",
+			img: "../assets/img/moana.png",
+			soundtrack: "../assets/audio/Jemaine_Clement_Shiny_from_Moana_O.mp3",
 		},
 		{
 			title: "Tarzan",
@@ -1047,6 +1061,13 @@ let collectionOfShows = {
 			soundtrack: "../assets/audio/Aladin-Prince Ali.mp3",
 		},
 		{
+			title: "Aladdin",
+			descr:
+				"is a poor street urchin who spends his time stealing food from the marketplace in the city of Agrabah. ",
+			img: "../assets/img/aladdin.png",
+			soundtrack: "../assets/audio/Aladdin___A_Whole_New_World_HD_1080p.mp3",
+		},
+		{
 			title: "The Lion King",
 			descr:
 				"A prince cursed to spend his days as a hideous monster sets out to regain his humanity by earning a young womans love",
@@ -1054,8 +1075,16 @@ let collectionOfShows = {
 			soundtrack: "../assets/audio/Lion King be prepared.mp3",
 		},
 		{
+			title: "The Lion King",
+			descr:
+				"A prince cursed to spend his days as a hideous monster sets out to regain his humanity by earning a young womans love",
+			img: "../assets/img/the-lion-king.png",
+			soundtrack: "../assets/audio/The_Lion_King_Official_Music_Video_T.mp3",
+		},
+		{
 			title: "Beauty and the Beast",
-			descr: "",
+			descr:
+				" a prince who is magically transformed into a monster and his servants into household objects ",
 			img: "../assets/img/beauty-and-the-beast.png",
 			soundtrack: "../assets/audio/beauty and beast - be our guest.mp3",
 		},
