@@ -42,13 +42,33 @@ function shuffleShowArr(tvShowsArr) {
 }
 
 function getFiveObjsFromArr(shuffledArrOfShows) {
-	return shuffledArrOfShows.slice(0, 5)
+	/**
+	 * TODO
+	 * Loop over the shuffledArrOfShows
+	 * Check if the name is equal to name n1
+	 * Check if the soundtrack is equal soundtrack n1
+	 * If true then delete the show from the list and get another show
+	 * If false then its ok
+	 */
+
+	let shuffledFiveShows = shuffledArrOfShows.slice(5)
+	return shuffledFiveShows
+	/* let uniqueFiveShows = []
+  shuffledFiveShows.filter((show, nextShow) => {
+    if(show.title === nextShow.title){
+      if (show.soundtrack === nextShow.soundtrack) {
+
+      }else {
+
+      }
+    }
+  }) */
 }
 
-function getShuffledCardsByType(){
+function getShuffledCardsByType() {
 	showType = sessionStorage["showType"]
 
-	let shuffledTVShows;
+	let shuffledTVShows
 	if (showType === "tvShows") {
 		shuffledTVShows = shuffleShowArr(collectionOfShows.tvShows)
 	} else if (showType === "disneyShows") {
@@ -59,12 +79,14 @@ function getShuffledCardsByType(){
 		shuffledTVShows = shuffleShowArr(collectionOfShows.tvShows)
 	}
 	return shuffledTVShows
-
 }
 
 function generateGameQuestions(fiveShows) {
 	// Shuffle TV Show
-	let shuffledTVShows = getShuffledCardsByType(), counter = 0, listOfQuestions = [], questions = [];
+	let shuffledTVShows = getShuffledCardsByType(),
+		counter = 0,
+		listOfQuestions = [],
+		questions = []
 	for (let show of fiveShows) {
 		questions = []
 		//console.log(show.title)
@@ -87,8 +109,8 @@ function generateGameQuestions(fiveShows) {
 }
 
 function playGame(gameRoundQuestions) {
-	parseInt(document.querySelector("#current-round").innerHTML) - 1;
-//console.log("gameRoundQuestions: ", gameRoundQuestions)
+	parseInt(document.querySelector("#current-round").innerHTML) - 1
+	//console.log("gameRoundQuestions: ", gameRoundQuestions)
 	correctAnswer = gameRoundQuestions[0][0][0].title
 
 	let shuffleGameArr = shuffleShowArr(gameRoundQuestions[0][0])
@@ -98,7 +120,7 @@ function playGame(gameRoundQuestions) {
 }
 
 function changeElementOnWebpage(gameArr) {
-	parseInt(document.querySelector("#current-round").innerHTML) - 1;
+	parseInt(document.querySelector("#current-round").innerHTML) - 1
 	let soundtrackKey = ""
 	gameArr.forEach((showObj, index) => {
 		document.querySelector(`#answer-img-${index}`).src = showObj.img
@@ -170,7 +192,7 @@ function checkAnswer() {
 				cardTitle.classList.contains("bg-yellow-300") &&
 				cardTitle.classList.contains("text-indigo-500")
 			console.log("isCardSelected: ", isCardSelected)
-			let currentRound;
+			let currentRound
 			if (isCardSelected) {
 				console.log(cardTitle.innerHTML + "===" + correctAnswer)
 				if (cardTitle.innerHTML === correctAnswer) {
@@ -267,7 +289,8 @@ function timerCountdown(duration, display) {
 				clearInterval(timerInterval)
 			} else {
 				currentPoints = parseInt(document.querySelector("#point").innerHTML) - 5
-				document.querySelector("#current-round").innerHTML = parseInt(document.querySelector("#current-round").innerHTML) + 1
+				document.querySelector("#current-round").innerHTML =
+					parseInt(document.querySelector("#current-round").innerHTML) + 1
 				document.querySelector("#point").innerHTML = currentPoints
 				shuffledArrOfShows = shuffleShowArr(getTheTypeOfCards())
 				fiveShows = getFiveObjsFromArr(shuffledArrOfShows)
