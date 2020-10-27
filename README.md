@@ -1,6 +1,6 @@
 # SoundGuessy
 
-I notice where is not a way to listen to soundtracks and guessing the Movie, TV-Show, Music, Video Game or Land (Hymne). There is a option but it is really not ux friendly it by hearing the sound on youtube and guessing the soundtrack.
+I notice where is not a way to listen to soundtracks and guessing the Movie, TV-Show, Music, Video Game or Land (Hymne).
 
 - [SoundGuessy](#soundguessy)
   - [:package: Installation](#package-installation)
